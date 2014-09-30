@@ -1,0 +1,339 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>PHP - Arrays</title>
+<link href="supporting_files/style.css" rel="stylesheet" />
+<script src="supporting_files/jquery.js"></script>
+<script src="supporting_files/jquery-ui.js"></script>
+<script src="supporting_files/apprise-1.5.full.js"></script>
+<script src="supporting_files/php.js"></script>
+</head>
+<body>
+<div id="title">Arrays</div>
+<div id="main">
+	<div class="step" id="step_1">
+	<p><a href="javascript:define('array');" class="definition">Arrays</a> are a special type of <a href="javascript:define('variable');" class="definition">variable</a>. They are a group of similar variables organised into a structure.</p>
+	<ul class="commands">
+		<li><a href="php.html">End Tutorial</a></li>
+		<li class="next"><a href="javascript:next(1);">Next</a></li>
+	</ul>
+	</div>
+	<div class="step" id="step_2">
+	<p>In PHP, arrays are very flexible and allow many different uses. The basic usage of any array is as a list of items:</p>
+	<div class="code">
+	&lt;?php<br />
+	$temperatures = <span class="keyword">array</span>( 13, 15, 12, 9, 11, 14, 8 );<br />
+	?&gt;	</div>
+	<p>Here we have an array called <span class="code">$temperatures</span> with 7 values (<a href="javascript:define('element');" class="definition">elements</a>) in. This could be the past weeks' temperatures.</p>
+	<ul class="commands">
+		<li><a href="php.html">End Tutorial</a></li>
+		<li><a href="javascript:previous(2);">Previous</a></li>
+		<li class="next"><a href="javascript:next(2);">Next</a></li>
+	</ul>
+	</div>
+	<div class="step" id="step_3">
+	<p>We can read each <a href="javascript:define('element');" class="definition">element</a> out of the array. Arrays start counting from 0, so the first element is number 0, the last is number 6.</p>
+	<ul class="commands">
+		<li><a href="php.html">End Tutorial</a></li>
+		<li><a href="javascript:previous(3);">Previous</a></li>
+		<li class="next"><a href="javascript:next(3);">Next</a></li>
+	</ul>
+	</div>
+	<div class="step" id="step_4">
+	<p>We can access the second element (which holds 15) by using the following code:</p>
+	<div class="code">
+	&lt;?php<br />
+	$second_day = $temperatures[1];<br />
+	?&gt;
+	</div>
+	<ul class="commands">
+		<li><a href="php.html">End Tutorial</a></li>
+		<li><a href="javascript:previous(4);">Previous</a></li>
+		<li class="next"><a href="javascript:next(4);">Next</a></li>
+	</ul>
+	</div>
+	<div class="step" id="step_5">
+	<p>As we've said, we want the second element. We know counting starts at 0, so the second element is number 1. We put 1 in square brackets after the variable name.</p>
+	<ul class="commands">
+		<li><a href="php.html">End Tutorial</a></li>
+		<li><a href="javascript:previous(5);">Previous</a></li>
+		<li class="next"><a href="javascript:next(5);">Next</a></li>
+	</ul>
+	</div>
+	<div class="step" id="step_6">
+	<p>We can also use the same approach to write to array elements:</p>
+	<div class="code">
+	&lt;?php<br />
+	$temperatures[4] = 12;<br />
+	?&gt;
+	</div>
+	<p>This sets the fifth element's value to 12.</p>
+	<ul class="commands">
+		<li><a href="php.html">End Tutorial</a></li>
+		<li><a href="javascript:previous(6);">Previous</a></li>
+		<li class="next"><a href="javascript:next(6);">Next</a></li>
+	</ul>
+	</div>
+	<div class="step" id="step_7">
+	<p>You can also add a new element to the end, either by inserting that number:</p>
+	<div class="code">
+	&lt;?php<br />
+	$temperatures[7] = 9;<br />
+	?&gt;
+	</div>
+	<ul class="commands">
+		<li><a href="php.html">End Tutorial</a></li>
+		<li><a href="javascript:previous(7);">Previous</a></li>
+		<li class="next"><a href="javascript:next(7);">Next</a></li>
+	</ul>
+	</div>
+	<div class="step" id="step_8">
+	<p>Or by &quot;pushing&quot; it:</p>
+	<div class="code">
+	&lt;?php<br />
+	$temperatures[] = 9;<br />
+	?&gt;
+	</div>
+	<p>By leaving the square brackets empty, we can "push" elements to the end of an array. This assigns this <a href="javascript:define('element');" class="definition">element</a> to the next number (which is called an <a href="javascript:define('key');" class="definition">index</a>). </p>
+	<ul class="commands">
+		<li><a href="php.html">End Tutorial</a></li>
+		<li><a href="javascript:previous(8);">Previous</a></li>
+		<li class="next"><a href="javascript:next(8);">Next</a></li>
+	</ul>
+	</div>
+	<div class="step" id="step_9">
+	<p>PHP arrays resize automatically, so you can add as many elements as you like. You also don't need to add them in the right order. We could add a 58th element without having a 57th element.</p>
+	<ul class="commands">
+		<li><a href="php.html">End Tutorial</a></li>
+		<li><a href="javascript:previous(9);">Previous</a></li>
+		<li class="next"><a href="javascript:next(9);">Next</a></li>
+	</ul>
+	</div>
+	<div class="step" id="step_10">
+	<p>With an array, what we are producing is an <a href="javascript:define('key');" class="definition">index</a>/value list. We can say at the index "4" there is a value of "12", for instance.</p>
+	<ul class="commands">
+		<li><a href="php.html">End Tutorial</a></li>
+		<li><a href="javascript:previous(10);">Previous</a></li>
+		<li class="next"><a href="javascript:next(10);">Next</a></li>
+	</ul>
+	</div>
+	<div class="step" id="step_11">
+	<p>Indexes in PHP can also be called "<a href="javascript:define('key');" class="definition">keys</a>". So we can access any array value using its key.</p>
+	<ul class="commands">
+		<li><a href="php.html">End Tutorial</a></li>
+		<li><a href="javascript:previous(11);">Previous</a></li>
+		<li class="next"><a href="javascript:next(11);">Next</a></li>
+	</ul>
+	</div>
+	<div class="step" id="step_12">
+	<p>Unlike other programming languages, <a href="javascript:define('key');" class="definition">keys</a> don't have to be an <a href="javascript:define('integer');" class="definition">integer</a>, so we could map one <a href="javascript:define('string');" class="definition">string</a> to another. For example, if translating, we could do this:</p>
+	<div class="code">
+	&lt;?php<br />
+	$spanish = <span class="keyword">array</span>();<br />
+	$spanish[<span class="string">"hello"</span>] = <span class="string">"hola"</span>;<br />
+	$spanish[<span class="string">"goodbye"</span>] = <span class="string">"adios"</span>;<br />
+	$spanish[<span class="string">"world"</span>] = <span class="string">"mundo"</span>;<br />
+	?&gt;	</div>
+	<ul class="commands">
+		<li><a href="php.html">End Tutorial</a></li>
+		<li><a href="javascript:previous(12);">Previous</a></li>
+		<li class="next"><a href="javascript:next(12);">Next</a></li>
+	</ul>
+	</div>
+	<div class="step" id="step_13">
+	<p>On a side note, we can create this array in one <a href="javascript:define('instruction');" class="definition">instruction</a> in the following way:</p>
+	<div class="code">
+	&lt;?php<br />
+	$spanish = <span class="keyword">array</span>(<br />
+	&nbsp;&nbsp;&nbsp;<span class="string">"hello"</span> => <span class="string">"hola"</span>,<br />
+	&nbsp;&nbsp;&nbsp;<span class="string">"goodbye"</span> => <span class="string">"adios"</span>,<br />
+	&nbsp;&nbsp;&nbsp;<span class="string">"world"</span> => <span class="string">"mundo"</span><br />
+	);<br />
+	?&gt;	</div>
+	<ul class="commands">
+		<li><a href="php.html">End Tutorial</a></li>
+		<li><a href="javascript:previous(13);">Previous</a></li>
+		<li class="next"><a href="javascript:next(13);">Next</a></li>
+	</ul>
+	</div>
+	<div class="step" id="step_14">
+	<p>We can access the Spanish translation of hello, goodbye and world now:</p>
+	<div class="code">
+	&lt;?php<br />
+	<span class="keyword">echo</span> $spanish[<span class="string">"hello"</span>] . <span class="string">" "</span> . $spanish[<span class="string">"world"</span>];<br />
+	?&gt;	</div>
+	<p>This will output the Spanish equivalent of "Hello world" ("hola mundo").</p>
+	<ul class="commands">
+		<li><a href="php.html">End Tutorial</a></li>
+		<li><a href="javascript:previous(14);">Previous</a></li>
+		<li class="next"><a href="javascript:next(14);">Next</a></li>
+	</ul>
+	</div>
+	<div class="step" id="step_15">
+	<p>As you can see, arrays are very useful in many different applications. Because <a href="javascript:define('key');" class="definition">keys</a> are often <a href="javascript:define('integer');" class="definition">integers</a>, this is suited very well to a <a href="javascript:define('for');" class="definition">FOR loop</a>. If we want to set all the values in an array, for instance:</p>
+	<div class="code">
+	&lt;?php<br />
+	$numbers = <span class="keyword">array</span>();<br />
+	$temp_num = 10;<br />
+	<span class="keyword">for</span>( $x=0; $x<10; $x++ ) {<br />
+	&nbsp;&nbsp;&nbsp;$numbers[$x] = $temp_num;<br />
+	&nbsp;&nbsp;&nbsp;$temp_num--;<br />
+	}<br />
+	?&gt;	</div>
+	<p>This will set 10 elements of the array with values from 10 down to 1.</p>
+	<ul class="commands">
+		<li><a href="php.html">End Tutorial</a></li>
+		<li><a href="javascript:previous(15);">Previous</a></li>
+		<li class="next"><a href="javascript:next(15);">Next</a></li>
+	</ul>
+	</div>
+	<div class="step" id="step_16">
+	<p>If we want to output all the values of an array, we can use a function called <span class="code">print_r</span>:</p>
+	<div class="code">
+	&lt;?php<br />
+	print_r( $numbers );<br />
+	?&gt;
+	</div>
+	<p>This will show you the whole contents of an array.</p>
+	<ul class="commands">
+		<li><a href="php.html">End Tutorial</a></li>
+		<li><a href="javascript:previous(16);">Previous</a></li>
+		<li class="next"><a href="javascript:next(16);">Next</a></li>
+	</ul>
+	</div>
+	<div class="step" id="step_17">
+	<p>If we want to read array elements, we can use a <a href="javascript:define('for');" class="definition">FOR loop</a> again. Another way we can do it is by using a <a href="javascript:define('foreach');" class="definition">FOREACH loop</a>. These are designed just for arrays, and it means we can read all the elements out of the array:</p>
+	<div class="code">
+	&lt;?php<br />
+	<span class="keyword">foreach</span>( $numbers <span class="keyword">as</span> $value ) {<br />
+	&nbsp;&nbsp;&nbsp;$value . <span class="string">"\n"</span>;<br />
+	}<br />
+	?&gt;	</div>
+	<ul class="commands">
+		<li><a href="php.html">End Tutorial</a></li>
+		<li><a href="javascript:previous(17);">Previous</a></li>
+		<li class="next"><a href="javascript:next(17);">Next</a></li>
+	</ul>
+	</div>
+	<div class="step" id="step_18">
+	<p>This takes each element in numbers. With each element it sets <span class="code">$value</span> to this value then runs the code. It repeats this until it reaches the end of the array. It's very similar to using this <a href="javascript:define('for');" class="definition">FOR loop</a>:</p>
+	<div class="code">
+	&lt;?php<br />
+	<span class="keyword">for</span>( $x=0; $x&lt; count ( $numbers ); $x++ ) {<br />
+	&nbsp;&nbsp;&nbsp;$value = $numbers[$x];<br />
+	&nbsp;&nbsp;&nbsp;<span class="comment">//loop code in here</span><br />
+	}<br />
+	?&gt;</div>
+	<ul class="commands">
+		<li><a href="php.html">End Tutorial</a></li>
+		<li><a href="javascript:previous(18);">Previous</a></li>
+		<li class="next"><a href="javascript:next(18);">Next</a></li>
+	</ul>
+	</div>
+	<div class="step" id="step_19">
+	<p>Although this loop code is less reliable than using the FOREACH (because non-numeric <a href="javascript:define('key');" class="definition">keys</a> may be used, or the keys may not be in a sequence).</p>
+	<ul class="commands">
+		<li><a href="php.html">End Tutorial</a></li>
+		<li><a href="javascript:previous(19);">Previous</a></li>
+		<li class="next"><a href="javascript:next(19);">Next</a></li>
+	</ul>
+	</div>
+	<div class="step" id="step_20">
+	<p>Using the <a href="javascript:define('foreach');" class="definition">FOREACH</a>, we can get the key as well as the value, using the following code:</p>
+	<div class="code">
+	&lt;?php<br />
+	<span class="keyword">foreach</span>( $numbers <span class="keyword">as</span> $key => $value ) {<br />
+	&nbsp;&nbsp;&nbsp;$value . <span class="string">"\n"</span>;<br />
+	}<br />
+	?&gt;</div>
+	<ul class="commands">
+		<li><a href="php.html">End Tutorial</a></li>
+		<li><a href="javascript:previous(20);">Previous</a></li>
+		<li class="next"><a href="javascript:next(20);">Next</a></li>
+	</ul>
+	</div>
+	<div class="step" id="step_21">
+	<p>We can also create "multi-dimensional arrays". Where a standard (one dimensional) array is like a list, two dimensional arrays are like a table, three dimensional arrays are like cubes. Arrays above three dimensions are difficult to visualise, but you can create an array with any number of dimensions.</p>
+	<ul class="commands">
+		<li><a href="php.html">End Tutorial</a></li>
+		<li><a href="javascript:previous(21);">Previous</a></li>
+		<li class="next"><a href="javascript:next(21);">Next</a></li>
+	</ul>
+	</div>
+	<div class="step" id="step_22">
+	<p>To add an extra "dimension", we just place another array inside an array:</p>
+	<div class="code">
+	&lt;?php<br />
+	$table = <span class="keyword">array</span>(<br />
+	&nbsp;&nbsp;&nbsp;<span class="keyword">array</span>(53,68,85,13,74),<br />
+	&nbsp;&nbsp;&nbsp;<span class="keyword">array</span>(86,46,57,53,24),<br />
+	&nbsp;&nbsp;&nbsp;<span class="keyword">array</span>(95,24,11,67,88)<br />
+	);<br />
+	?&gt;	</div>
+	<p>This would create a two dimensional array with some numbers in it.</p>
+	<ul class="commands">
+		<li><a href="php.html">End Tutorial</a></li>
+		<li><a href="javascript:previous(22);">Previous</a></li>
+		<li class="next"><a href="javascript:next(22);">Next</a></li>
+	</ul>
+	</div>
+	<div class="step" id="step_23">
+	<p>We could use two FOR loops (one within another) to create a two dimensional array and fill it with values:</p>
+	<div class="code">
+	&lt;?php<br />
+	$array = <span class="keyword">array</span>();<br />
+	$num=1;<br />
+	<span class="keyword">for</span>( $x=0; $x<5; $x++ ) {<br />
+	&nbsp;&nbsp;&nbsp;<span class="keyword">for</span>( $y=0; $y<5; $y++ ) {<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$array[$x][$y] = $num;<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$num++;<br />
+	&nbsp;&nbsp;&nbsp;}<br />
+	}<br />
+	?&gt;</div>
+	<ul class="commands">
+		<li><a href="php.html">End Tutorial</a></li>
+		<li><a href="javascript:previous(23);">Previous</a></li>
+		<li class="next"><a href="javascript:next(23);">Next</a></li>
+	</ul>
+	</div>
+	<div class="step" id="step_24">
+	<p>If we wanted to access the number 57 in the middle of the table, we would do the following:</p>
+	<div class="code">
+	&lt;?php<br />
+	$num = $table[1][2];<br />
+	?&gt;
+	</div>
+	<ul class="commands">
+		<li><a href="php.html">End Tutorial</a></li>
+		<li><a href="javascript:previous(24);">Previous</a></li>
+		<li class="next"><a href="javascript:next(24);">Next</a></li>
+	</ul>
+	</div>
+	<div class="step" id="step_25">
+	<p>This is because it is in the second row (index 1) and the third column (index 2).</p>
+	<ul class="commands">
+		<li><a href="php.html">End Tutorial</a></li>
+		<li><a href="javascript:previous(25);">Previous</a></li>
+		<li class="next"><a href="javascript:next(25);">Next</a></li>
+	</ul>
+	</div>
+	<div class="step" id="step_26">
+	<p>We can mix dimensions within the same array, although this makes accessing the data more difficult.</p>
+	<ul class="commands">
+		<li><a href="php.html">End Tutorial</a></li>
+		<li><a href="javascript:previous(26);">Previous</a></li>
+		<li class="next"><a href="javascript:next(26);">Next</a></li>
+	</ul>
+	</div>
+	<div class="step complete" id="step_27">
+		<p>Tutorial Complete</p>
+		<ul class="commands">
+			<li><a href="javascript:previous(27);">Previous</a></li>
+			<li><a href="php.html">Back to PHP Tutorials</a></li>
+			<li><a href="php_classes.html">Next Tutorial</a></li>
+		</ul>
+	</div>
+</div>
+</body>
+</html>

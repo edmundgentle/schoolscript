@@ -1,0 +1,281 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>PHP - Iteration</title>
+<link href="supporting_files/style.css" rel="stylesheet" />
+<script src="supporting_files/jquery.js"></script>
+<script src="supporting_files/jquery-ui.js"></script>
+<script src="supporting_files/apprise-1.5.full.js"></script>
+<script src="supporting_files/php.js"></script>
+</head>
+<body>
+<div id="title">Iteration</div>
+<div id="main">
+	<div class="step" id="step_1">
+  <p>This is the third important part of programming in any language. Iteration is the process of repeating instructions a number of times. We will need to draw on a couple of things from previous exercises.</p>
+  <ul class="commands">
+    <li><a href="php.html">End Tutorial</a></li>
+	<li class="next"><a href="javascript:next(1);">Next</a></li>
+  </ul>
+</div>
+<div class="step" id="step_2">
+  <p>First of all, we need to remember <a href="javascript:define('boolean');" class="definition">Boolean</a> expressions and <a href="javascript:define('condition');" class="definition">conditions</a>. If you don't remember, look back at the variables section and the selection section.</p>
+  <ul class="commands">
+    <li><a href="php.html">End Tutorial</a></li>
+	<li><a href="javascript:previous(2);">Previous</a></li>
+	<li class="next"><a href="javascript:next(2);">Next</a></li>
+  </ul>
+</div>
+<div class="step" id="step_3">
+  <p>Secondly, we need to remember curly brackets ( <span class="code">{ }</span> ) - or braces - which are used to group together sections of code. Code within the braces is indented (using the TAB key) to make it easier to read.</p>
+  <ul class="commands">
+    <li><a href="php.html">End Tutorial</a></li>
+	<li><a href="javascript:previous(3);">Previous</a></li>
+	<li class="next"><a href="javascript:next(3);">Next</a></li>
+  </ul>
+</div>
+<div class="step" id="step_4">
+  <p>Before we look at how to create a loop, we will warn you about infinite loops. You will probably create an infinite loop at some point - everyone does! These are often caused by programmer error. Basically, all loops have a "loop condition". If the loop condition never finishes, then the loop will continue forever. We will warn you of how these can be caused and prevented for each type of loop.</p>
+  <ul class="commands">
+    <li><a href="php.html">End Tutorial</a></li>
+	<li><a href="javascript:previous(4);">Previous</a></li>
+	<li class="next"><a href="javascript:next(4);">Next</a></li>
+  </ul>
+</div>
+<div class="step" id="step_5">
+  <p>We are going to look at three ways of <a href="javascript:define('iteration');" class="definition">iterating</a> (looping through code) which all behave a little differently.</p>
+  <ul class="commands">
+    <li><a href="php.html">End Tutorial</a></li>
+	<li><a href="javascript:previous(5);">Previous</a></li>
+	<li class="next"><a href="javascript:next(5);">Next</a></li>
+  </ul>
+</div>
+<div class="step" id="step_6">
+  <p>The first is called a <a href="javascript:define('for');" class="definition">FOR loop</a>. A FOR loop starts at a number and counts to another number. It can count up and down in any sequence.</p>
+  <ul class="commands">
+    <li><a href="php.html">End Tutorial</a></li>
+	<li><a href="javascript:previous(6);">Previous</a></li>
+	<li class="next"><a href="javascript:next(6);">Next</a></li>
+  </ul>
+</div>
+<div class="step" id="step_7">
+  <p>For a FOR loop, you need three main pieces of information. The first is the starting value. Where do you want to start counting from?</p>
+  <ul class="commands">
+    <li><a href="php.html">End Tutorial</a></li>
+	<li><a href="javascript:previous(7);">Previous</a></li>
+	<li class="next"><a href="javascript:next(7);">Next</a></li>
+  </ul>
+</div>
+<div class="step" id="step_8">
+  <p>The second is the end value. Where do you want it to stop counting?</p>
+  <ul class="commands">
+    <li><a href="php.html">End Tutorial</a></li>
+	<li><a href="javascript:previous(8);">Previous</a></li>
+	<li class="next"><a href="javascript:next(8);">Next</a></li>
+  </ul>
+</div>
+<div class="step" id="step_9">
+  <p>The third is the change at each step. Do you want it to go up one each time, or go down one? Or go up three?</p>
+  <ul class="commands">
+    <li><a href="php.html">End Tutorial</a></li>
+	<li><a href="javascript:previous(9);">Previous</a></li>
+	<li class="next"><a href="javascript:next(9);">Next</a></li>
+  </ul>
+</div>
+<div class="step" id="step_10">
+  <p>In this example, we are going to count from 1 to 10, going up by one each time.</p>
+  <div class="code"> &lt;?php<br />
+    <span class="keyword">for</span>($x = 1; $x &lt;= 10; $x++ ) {<br />
+    &nbsp;&nbsp;&nbsp;<span class="keyword">echo</span> $x . <span class="string">"\n"</span>;<br />
+    }<br />
+    ?&gt; </div>
+  <ul class="commands">
+    <li><a href="php.html">End Tutorial</a></li>
+	<li><a href="javascript:previous(10);">Previous</a></li>
+	<li class="next"><a href="javascript:next(10);">Next</a></li>
+  </ul>
+</div>
+<div class="step" id="step_11">
+  <p>Lets take a look at each part of the code. First of all, we've got the <a href="javascript:define('keyword');" class="definition">keyword</a> "for" followed by brackets. The brackets contain the loop condition.</p>
+  <ul class="commands">
+    <li><a href="php.html">End Tutorial</a></li>
+	<li><a href="javascript:previous(11);">Previous</a></li>
+	<li class="next"><a href="javascript:next(11);">Next</a></li>
+  </ul>
+</div>
+<div class="step" id="step_12">
+  <p>The loop condition is split into three parts for a FOR loop. These are the parts we have just talked about.</p>
+  <ul class="commands">
+    <li><a href="php.html">End Tutorial</a></li>
+	<li><a href="javascript:previous(12);">Previous</a></li>
+	<li class="next"><a href="javascript:next(12);">Next</a></li>
+  </ul>
+</div>
+<div class="step" id="step_13">
+  <p>The first part (<span class="code">$x = 1</span>) creates a variable called <span class="code">$x</span>. This variable controls the loop. It sets the value of <span class="code">$x</span> to 1 when the loop starts. This variable can be called whatever you like. Names like <span class="code">$x</span>, <span class="code">$y</span> and <span class="code">$z</span> are often used.</p>
+  <ul class="commands">
+    <li><a href="php.html">End Tutorial</a></li>
+	<li><a href="javascript:previous(13);">Previous</a></li>
+	<li class="next"><a href="javascript:next(13);">Next</a></li>
+  </ul>
+</div>
+<div class="step" id="step_14">
+  <p>The second part is the end condition. In this example, it is saying "carry on looping while <span class="code">$x</span> is less than or equal to 10." When <span class="code">$x</span> becomes greater than 10, the loop ends.</p>
+  <ul class="commands">
+    <li><a href="php.html">End Tutorial</a></li>
+	<li><a href="javascript:previous(14);">Previous</a></li>
+	<li class="next"><a href="javascript:next(14);">Next</a></li>
+  </ul>
+</div>
+<div class="step" id="step_15">
+  <p>The final part of the loop is the change at each step. You may remember from the Variables section that we can increment (add one to) a number using <span class="code">++</span>. This is used a lot in FOR loops. In the example, we are adding one to <span class="code">$x</span> each time.</p>
+  <ul class="commands">
+    <li><a href="php.html">End Tutorial</a></li>
+	<li><a href="javascript:previous(15);">Previous</a></li>
+	<li class="next"><a href="javascript:next(15);">Next</a></li>
+  </ul>
+</div>
+<div class="step" id="step_16">
+  <p>You will notice that each of the sections within the brackets is separated by semi-colons (<span class="code">;</span>). This is very similar in many different programming languages.</p>
+  <ul class="commands">
+    <li><a href="php.html">End Tutorial</a></li>
+	<li><a href="javascript:previous(16);">Previous</a></li>
+	<li class="next"><a href="javascript:next(16);">Next</a></li>
+  </ul>
+</div>
+<div class="step" id="step_17">
+  <p>After the loop condition, we have braces which hold the code within the loop. This code is run every time the loop goes round. It can use the variable <span class="code">$x</span> if it wants to, but it should not change <span class="code">$x</span>. If you change <span class="code">$x</span> within the loop, you may cause an infinite loop!</p>
+  <ul class="commands">
+    <li><a href="php.html">End Tutorial</a></li>
+	<li><a href="javascript:previous(17);">Previous</a></li>
+	<li class="next"><a href="javascript:next(17);">Next</a></li>
+  </ul>
+</div>
+<div class="step" id="step_18">
+  <p>You'll notice that the number has been outputted and it has been <a href="javascript:define('concatenate');" class="definition">concatenated</a> with "\n". This puts in a new line in the output box, which makes the output a little neater.</p>
+  <ul class="commands">
+    <li><a href="php.html">End Tutorial</a></li>
+	<li><a href="javascript:previous(18);">Previous</a></li>
+	<li class="next"><a href="javascript:next(18);">Next</a></li>
+  </ul>
+</div>
+<div class="step" id="step_19">
+  <p>Once the loop condition finishes, the program then moves onto the code after the loop and continues running as normal.</p>
+  <ul class="commands">
+    <li><a href="php.html">End Tutorial</a></li>
+	<li><a href="javascript:previous(19);">Previous</a></li>
+	<li class="next"><a href="javascript:next(19);">Next</a></li>
+  </ul>
+</div>
+<div class="step" id="step_20">
+  <p>If your loop condition is never met, then it will never actually run the code. For example, if you start your loop from 1 and say "while it's less than 1", then the loop will never run, because 1 is never less than 1.</p>
+  <ul class="commands">
+    <li><a href="php.html">End Tutorial</a></li>
+	<li><a href="javascript:previous(20);">Previous</a></li>
+	<li class="next"><a href="javascript:next(20);">Next</a></li>
+  </ul>
+</div>
+<div class="step" id="step_21">
+  <p>The next type of loop is a <a href="javascript:define('while');" class="definition">WHILE loop</a>. A sample while loop is:</p>
+  <div class="code"> &lt;?php<br />
+    $num = 0;<br />
+    <span class="keyword">while</span>( $num < 5 ) {<br />
+    &nbsp;&nbsp;&nbsp;$num++;<br />
+    }<br />
+    ?&gt; </div>
+	<ul class="commands">
+    <li><a href="php.html">End Tutorial</a></li>
+	<li><a href="javascript:previous(21);">Previous</a></li>
+	<li class="next"><a href="javascript:next(21);">Next</a></li>
+  </ul>
+</div>
+<div class="step" id="step_22">
+  <p>A while loop looks at a <a href="javascript:define('condition');" class="definition">condition</a>, like an <a href="javascript:define('selection');" class="definition">IF statement</a>. If the condition is true, then it runs the code within the loop. Once it's run this code, it will check the condition again. If it's true, it will continue to run the code until the condition isn't true.</p>
+  <ul class="commands">
+    <li><a href="php.html">End Tutorial</a></li>
+	<li><a href="javascript:previous(22);">Previous</a></li>
+	<li class="next"><a href="javascript:next(22);">Next</a></li>
+  </ul>
+</div>
+<div class="step" id="step_23">
+  <p>The code within the loop should change whatever is being checked in the condition. In the example, <span class="code">$num</span> is being checked in the condition, so we must change <span class="code">$num</span> in the code. If we don't then we would get an infinite loop.</p>
+  <ul class="commands">
+    <li><a href="php.html">End Tutorial</a></li>
+	<li><a href="javascript:previous(23);">Previous</a></li>
+	<li class="next"><a href="javascript:next(23);">Next</a></li>
+  </ul>
+</div>
+<div class="step" id="step_24">
+  <p>Like the <a href="javascript:define('for');" class="definition">FOR loop</a>, if the condition isn't true before the loop starts, then the code inside the loop will never run. A WHILE loop may run zero or more times.</p>
+  <ul class="commands">
+    <li><a href="php.html">End Tutorial</a></li>
+	<li><a href="javascript:previous(24);">Previous</a></li>
+	<li class="next"><a href="javascript:next(24);">Next</a></li>
+  </ul>
+</div>
+<div class="step" id="step_25">
+  <p>A WHILE loop can be used for solving a factorial problem. Factorials are where you take a number (let's say 5) and you multiply it by all the previous numbers. So the factorial of 5 is 1x2x3x4x5. We can write this as a program like so:</p>
+  <div class="code"> &lt;?php<br />
+    $num = 5;<br />
+    $total = 1;<br />
+    <span class="keyword">while</span>( $num>1 ) {<br />
+    &nbsp;&nbsp;&nbsp;$total = $total * $num;<br />
+    &nbsp;&nbsp;&nbsp;$num--;<br />
+    }<br />
+    ?&gt; </div>
+  <ul class="commands">
+    <li><a href="php.html">End Tutorial</a></li>
+	<li><a href="javascript:previous(25);">Previous</a></li>
+	<li class="next"><a href="javascript:next(25);">Next</a></li>
+  </ul>
+</div>
+<div class="step" id="step_26">
+  <p>The final type of loop is a <a href="javascript:define('dowhile');" class="definition">DO WHILE loop</a>. This is very similar to a WHILE loop, although a DO WHILE will run the code at least once.</p>
+  <div class="code"> &lt;?php<br />
+    $x = 0;<br />
+    <span class="keyword">do</span> {<br />
+    &nbsp;&nbsp;&nbsp;$x++;<br />
+    } <span class="keyword">while</span> ($x &lt; 5 );<br />
+    ?&gt; </div>
+  <ul class="commands">
+    <li><a href="php.html">End Tutorial</a></li>
+	<li><a href="javascript:previous(26);">Previous</a></li>
+	<li class="next"><a href="javascript:next(26);">Next</a></li>
+  </ul>
+</div>
+<div class="step" id="step_27">
+  <p>This loop is laid out a little differently to the other two. It starts with the <a href="javascript:define('keyword');" class="definition">keyword</a> "do" followed by the code in braces. Then there is the keyword "while" followed by the loop condition. This loop condition works in the same way as a <a href="javascript:define('while');" class="definition">WHILE loop</a> although it checks the condition after running the code rather than before it. </p>
+  <ul class="commands">
+    <li><a href="php.html">End Tutorial</a></li>
+	<li><a href="javascript:previous(27);">Previous</a></li>
+	<li class="next"><a href="javascript:next(27);">Next</a></li>
+  </ul>
+</div>
+<div class="task" id="step_28">
+  <p>Task: Output the numbers from 10 to 25.</p>
+  <ul class="commands">
+    <li><a href="php.html">End Tutorial</a></li>
+	<li><a href="javascript:previous(28);">Previous</a></li>
+	<li class="next"><a href="javascript:next(28);">Next</a></li>
+  </ul>
+</div>
+<div class="task" id="step_29">
+  <p>Task: Work out the total of all the numbers up to 50 (1+2+3+4...+49+50).</p>
+  <ul class="commands">
+    <li><a href="php.html">End Tutorial</a></li>
+	<li><a href="javascript:previous(29);">Previous</a></li>
+	<li class="next"><a href="javascript:next(29);">Next</a></li>
+  </ul>
+</div>
+	<div class="step complete" id="step_30">
+		<p>Tutorial Complete</p>
+		<ul class="commands">
+			<li><a href="javascript:previous(30);">Previous</a></li>
+			<li><a href="php.html">Back to PHP Tutorials</a></li>
+			<li><a href="php_functions.html">Next Tutorial</a></li>
+		</ul>
+	</div>
+</div>
+</body>
+</html>

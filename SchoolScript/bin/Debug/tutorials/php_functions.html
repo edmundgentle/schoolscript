@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>PHP - Functions</title>
+<link href="supporting_files/style.css" rel="stylesheet" />
+<script src="supporting_files/jquery.js"></script>
+<script src="supporting_files/jquery-ui.js"></script>
+<script src="supporting_files/apprise-1.5.full.js"></script>
+<script src="supporting_files/php.js"></script>
+</head>
+<body>
+<div id="title">Functions</div>
+<div id="main">
+	<div class="step" id="step_1">
+  <p>All programming languages use something called <a href="javascript:define('function');" class="definition">functions</a>. In other languages they may be referred to as methods, subroutines or procedures. Whilst they may technically differ slightly, the core idea is the same.</p>
+  <ul class="commands">
+    <li><a href="php.html">End Tutorial</a></li>
+	<li class="next"><a href="javascript:next(1);">Next</a></li>
+  </ul>
+</div>
+<div class="step" id="step_2">
+  <p>A function is a collection of instructions which have been given a name. They do a very specific task, for example, finding the largest number from a set of numbers. They can be used as many times as you like within your code and can make doing a very common, repetitive task much quicker and easier.</p>
+  <ul class="commands">
+    <li><a href="php.html">End Tutorial</a></li>
+	<li><a href="javascript:previous(2);">Previous</a></li>
+	<li class="next"><a href="javascript:next(2);">Next</a></li>
+  </ul>
+</div>
+<div class="step" id="step_3">
+  <p>Like most things we've discussed, a function has three main parts! The first part is a name. Like a <a href="javascript:define('variable');" class="definition">variable</a>, this can be any alphanumeric character or an underscore (<span class="code">_</span>) character. The standard in PHP is to use lowercase and to separate words with underscores.</p>
+  <ul class="commands">
+    <li><a href="php.html">End Tutorial</a></li>
+	<li><a href="javascript:previous(3);">Previous</a></li>
+	<li class="next"><a href="javascript:next(3);">Next</a></li>
+  </ul>
+</div>
+<div class="step" id="step_4">
+  <p>The second part of a function are its <a href="javascript:define('parameter');" class="definition">parameters</a>. These are <a href="javascript:define('variable');" class="definition">variables</a> which is passed into a function. You can have as many variables as you like.</p>
+  <ul class="commands">
+    <li><a href="php.html">End Tutorial</a></li>
+	<li><a href="javascript:previous(4);">Previous</a></li>
+	<li class="next"><a href="javascript:next(4);">Next</a></li>
+  </ul>
+</div>
+<div class="step" id="step_5">
+  <p>The third part is the code within the function. This can pass data back but it doesn't have to. As soon as your function passes data back, it stops running, regardless of whether it's reached the end or not.</p>
+  <ul class="commands">
+    <li><a href="php.html">End Tutorial</a></li>
+	<li><a href="javascript:previous(5);">Previous</a></li>
+	<li class="next"><a href="javascript:next(5);">Next</a></li>
+  </ul>
+</div>
+<div class="step" id="step_6">
+  <p>Okay, so let's take a look at an example. Let's write a function which gives you the highest number out of two numbers.</p>
+  <div class="code">&lt;?php<br />
+    <span class="keyword">function</span> max_of_two( $num1 , $num2 ) {<br />
+    &nbsp;&nbsp;&nbsp;<span class="keyword">if</span> ( $num1 &gt; $num2 ) {<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span> $num1;<br />
+    &nbsp;&nbsp;&nbsp;}<span class="keyword">else</span>{<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span> $num2;<br />
+    &nbsp;&nbsp;&nbsp;}<br />
+    }<br />
+    ?&gt;</div>
+  <p>So if we have a look at how a function is constructed, we can see that it starts with the <a href="javascript:define('keyword');" class="definition">keyword</a> "<span class="code">function</span>" followed by the name of the function.</p>
+  <ul class="commands">
+    <li><a href="php.html">End Tutorial</a></li>
+	<li><a href="javascript:previous(6);">Previous</a></li>
+	<li class="next"><a href="javascript:next(6);">Next</a></li>
+  </ul>
+</div>
+<div class="step" id="step_7">
+  <p>Then there are brackets which include the parameters - variables the function uses - with appropriate names for each one.</p>
+  <ul class="commands">
+    <li><a href="php.html">End Tutorial</a></li>
+	<li><a href="javascript:previous(7);">Previous</a></li>
+	<li class="next"><a href="javascript:next(7);">Next</a></li>
+  </ul>
+</div>
+<div class="step" id="step_8">
+  <p>Then in the braces, we've got our code. At two points it returns data (using the <a href="javascript:define('keyword');" class="definition">keyword</a> "<span class="code">return</span>"). "<span class="code">return</span>" is used in a similar way to "<span class="code">echo</span>". You say the keyword and then follow it with a <a href="javascript:define('variable');" class="definition">variable</a>.</p>
+  <ul class="commands">
+    <li><a href="php.html">End Tutorial</a></li>
+	<li><a href="javascript:previous(8);">Previous</a></li>
+	<li class="next"><a href="javascript:next(8);">Next</a></li>
+  </ul>
+</div>
+<div class="step" id="step_9">
+  <p>Remember, after the first "<span class="code">return</span>" has been called, the function ends immediately.</p>
+  <ul class="commands">
+    <li><a href="php.html">End Tutorial</a></li>
+	<li><a href="javascript:previous(9);">Previous</a></li>
+	<li class="next"><a href="javascript:next(9);">Next</a></li>
+  </ul>
+</div>
+<div class="step" id="step_10">
+  <p>So we've written a function. How do we use it? It's pretty simple!</p>
+  <div class="code">&lt;?php<br />
+    $max = max_of_two( 54, 83 );<br />
+    ?&gt;</div>
+  <p>We simply write its name followed by brackets including the <a href="javascript:define('parameter');" class="definition">argument</a> (the data we're passing in) in the order we wrote them in. So <span class="code">$num1</span> is set to 54 and <span class="code">$num2</span> is set to 83 within the function.</p>
+  <ul class="commands">
+    <li><a href="php.html">End Tutorial</a></li>
+	<li><a href="javascript:previous(10);">Previous</a></li>
+	<li class="next"><a href="javascript:next(10);">Next</a></li>
+  </ul>
+</div>
+<div class="step" id="step_11">
+  <p>When the "<span class="code">return</span>" instructions are reached, the value returned is passed back into <span class="code">$max</span> and can be used in the rest of the program.</p>
+  <ul class="commands">
+    <li><a href="php.html">End Tutorial</a></li>
+	<li><a href="javascript:previous(11);">Previous</a></li>
+	<li class="next"><a href="javascript:next(11);">Next</a></li>
+  </ul>
+</div>
+<div class="step" id="step_12">
+  <p>This brings us to another small bit of information called <a href="javascript:define('scope');" class="definition">variable scopes</a>.</p>
+  <ul class="commands">
+    <li><a href="php.html">End Tutorial</a></li>
+	<li><a href="javascript:previous(12);">Previous</a></li>
+	<li class="next"><a href="javascript:next(12);">Next</a></li>
+  </ul>
+</div>
+<div class="step" id="step_13">
+  <p>Variables used within a function, like <span class="code">$num1</span> and <span class="code">$num2</span> in the example, are only available within that function. As soon as that function ends, those variables are destroyed. They are called <a href="javascript:define('local');" class="definition">local variables</a> and can only be accessed from within that function.</p>
+  <ul class="commands">
+    <li><a href="php.html">End Tutorial</a></li>
+	<li><a href="javascript:previous(13);">Previous</a></li>
+	<li class="next"><a href="javascript:next(13);">Next</a></li>
+  </ul>
+</div>
+<div class="step" id="step_14">
+  <p>Variables in the main part of the code (not inside any <a href="javascript:define('function');" class="definition">functions</a>) are <a href="javascript:define('global');" class="definition">global variables</a>. We can use these within functions, but in order to do so, we need to import them into the function. For example, if we want to increment a number called <span class="code">$total</span> which is a global variable within a function, we would need to do the following:</p>
+  <div class="code">&lt;?php<br />
+    $total = 4; <br />
+      <span class="keyword">function</span> increment_total( ) {<br />
+    &nbsp;&nbsp;&nbsp;<span class="keyword">global</span> $total;<br />
+    &nbsp;&nbsp;&nbsp;$total++;<br />
+    }<br />
+    ?&gt;</div>
+  <p>We use the <a href="javascript:define('keyword');" class="definition">keyword</a> "<span class="code">global</span>" to use <span class="code">$total</span> in the function. Any changes we make to <span class="code">$total</span> within the function will change the global variable for the whole program.</p>
+  <ul class="commands">
+    <li><a href="php.html">End Tutorial</a></li>
+	<li><a href="javascript:previous(14);">Previous</a></li>
+	<li class="next"><a href="javascript:next(14);">Next</a></li>
+  </ul>
+</div>
+<div class="step" id="step_15">
+  <p>The function <span class="code">increment_total</span> above doesn't use any <a href="javascript:define('parameter');" class="definition">parameters</a> so the brackets are left empty.</p>
+  <ul class="commands">
+    <li><a href="php.html">End Tutorial</a></li>
+	<li><a href="javascript:previous(15);">Previous</a></li>
+	<li class="next"><a href="javascript:next(15);">Next</a></li>
+  </ul>
+</div>
+<div class="step" id="step_16">
+  <p>PHP has over 5000 built in functions. Not all are available within SchoolScript. You can find all of PHP's functions on PHP.net, the PHP manual. You can also write your own in the way we demonstrated.</p>
+  <ul class="commands">
+    <li><a href="php.html">End Tutorial</a></li>
+	<li><a href="javascript:previous(16);">Previous</a></li>
+	<li class="next"><a href="javascript:next(16);">Next</a></li>
+  </ul>
+</div>
+	<div class="step complete" id="step_17">
+		<p>Tutorial Complete</p>
+		<ul class="commands">
+			<li><a href="javascript:previous(17);">Previous</a></li>
+			<li><a href="php.html">Back to PHP Tutorials</a></li>
+			<li><a href="php_arrays.html">Next Tutorial</a></li>
+		</ul>
+	</div>
+</div>
+</body>
+</html>

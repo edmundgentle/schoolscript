@@ -1,0 +1,214 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>PHP - Additional Topics</title>
+<link href="supporting_files/style.css" rel="stylesheet" />
+<script src="supporting_files/jquery.js"></script>
+<script src="supporting_files/jquery-ui.js"></script>
+<script src="supporting_files/apprise-1.5.full.js"></script>
+<script src="supporting_files/php.js"></script>
+</head>
+<body>
+<div id="title">Additional Topics</div>
+<div id="main">
+	<div class="step" id="step_1">
+		<p>Dates and times within PHP are stored as <a href="javascript:define('timestamp');" class="definition">UNIX timestamps</a>. This is a numeric representation of a date. It is simply the number of seconds since 1st January 1970. So, 1st January at 1:00am would be 60(mins)x60(seconds) = 3,600.</p>
+		<ul class="commands">
+			<li><a href="php.html">End Tutorial</a></li>
+			<li class="next"><a href="javascript:next(1);">Next</a></li>
+		</ul>
+	</div>
+	<div class="step" id="step_2">
+	<p>PHP provides a number of <a href="javascript:define('function');" class="definition">functions</a> to allow you to manipulate dates and times.</p>
+		<ul class="commands">
+			<li><a href="php.html">End Tutorial</a></li>
+			<li><a href="javascript:previous(2);">Previous</a></li>
+			<li class="next"><a href="javascript:next(2);">Next</a></li>
+		</ul>
+	</div>
+	<div class="step" id="step_3">
+	<p>For example, "<span class="code">strtotime</span>" (string to time) is useful for turning a textual date into a <a href="javascript:define('timestamp');" class="definition">UNIX timestamp</a>.</p>
+		<ul class="commands">
+			<li><a href="php.html">End Tutorial</a></li>
+			<li><a href="javascript:previous(3);">Previous</a></li>
+			<li class="next"><a href="javascript:next(3);">Next</a></li>
+		</ul>
+	</div>
+	<div class="step" id="step_4">
+	<p>We can also use the "<span class="code">date</span>" function for formatting and outputting dates.</p>
+		<ul class="commands">
+			<li><a href="php.html">End Tutorial</a></li>
+			<li><a href="javascript:previous(4);">Previous</a></li>
+			<li class="next"><a href="javascript:next(4);">Next</a></li>
+		</ul>
+	</div>
+	<div class="step" id="step_5">
+	<p>Example date code is:</p>
+	<div class="code">
+	&lt;?php<br />
+	$time = strtotime("-1 week");<br />
+	<span class="keyword">echo</span> <span class="string">"The date last week was "</span> . date( <span class="string">"%d%j %m %Y"</span> , $time ); <span class="comment">//format: 1st January 2013</span><br />
+	?&gt;	</div>
+		<ul class="commands">
+			<li><a href="php.html">End Tutorial</a></li>
+			<li><a href="javascript:previous(5);">Previous</a></li>
+			<li class="next"><a href="javascript:next(5);">Next</a></li>
+		</ul>
+	</div>
+	<div class="step" id="step_6">
+	<p>More information on formatting dates can be found on the PHP.net website.</p>
+		<ul class="commands">
+			<li><a href="php.html">End Tutorial</a></li>
+			<li><a href="javascript:previous(6);">Previous</a></li>
+			<li class="next"><a href="javascript:next(6);">Next</a></li>
+		</ul>
+	</div>
+	<div class="step" id="step_7">
+	<p>We can output data in a useful way (often for passing between websites) using <a href="javascript:define('json');" class="definition">JSON</a>. This stands for JavaScript Object Notation and is used widely by most companies for sharing data.</p>
+		<ul class="commands">
+			<li><a href="php.html">End Tutorial</a></li>
+			<li><a href="javascript:previous(7);">Previous</a></li>
+			<li class="next"><a href="javascript:next(7);">Next</a></li>
+		</ul>
+	</div>
+	<div class="step" id="step_8">
+	<p>We can, for example, turn an <a href="javascript:define('array');" class="definition">array</a> into a JSON string and output it in the following way:</p>
+	<div class="code">
+	&lt;?php<br />
+	<span class="comment">//create a random array</span><br />
+	$my_array = <span class="keyword">array</span>(<br />
+	&nbsp;&nbsp;&nbsp;<span class="string">'foo'</span> => <span class="string">'bar'</span>,<br />
+	&nbsp;&nbsp;&nbsp;<span class="string">'hello'</span> => <span class="keyword">array</span>(<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">'name'</span> => <span class="keyword">array</span>(<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">'Jim'</span>,<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">'Bill'</span><br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;),<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">'world'</span><br />
+	&nbsp;&nbsp;&nbsp;),<br />
+	&nbsp;&nbsp;&nbsp;<span class="string">'Something else'</span><br />
+	);<br />
+	<span class="keyword">echo</span> json_encode( $my_array );<br />
+	?&gt;	</div>
+		<ul class="commands">
+			<li><a href="php.html">End Tutorial</a></li>
+			<li><a href="javascript:previous(8);">Previous</a></li>
+			<li class="next"><a href="javascript:next(8);">Next</a></li>
+		</ul>
+	</div>
+	<div class="step" id="step_9">
+	<p>The output of this may look like a bit of a jumble. It is a way of representing data so other programs can understand it.</p>
+		<ul class="commands">
+			<li><a href="php.html">End Tutorial</a></li>
+			<li><a href="javascript:previous(9);">Previous</a></li>
+			<li class="next"><a href="javascript:next(9);">Next</a></li>
+		</ul>
+	</div>
+	<div class="step" id="step_10">
+	<p>We can also read in JSON data using "<span class="code">json_decode</span>" and "<span class="code">file_get_contents</span>" to read in a file.</p>
+		<ul class="commands">
+			<li><a href="php.html">End Tutorial</a></li>
+			<li><a href="javascript:previous(10);">Previous</a></li>
+			<li class="next"><a href="javascript:next(10);">Next</a></li>
+		</ul>
+	</div>
+	<div class="step" id="step_11">
+	<p>This is useful for pulling in live data from another source. An example of this is for a tool which reads in the weather for a specific location:</p>
+	<div class="code">
+	&lt;?php<br />
+	$location_code = <span class="string">'UKXX0085'</span>;<br />
+	$url = <span class="string">'http://query.yahooapis.com/v1/public/yql?q=select%20item%20from%20weather.forecast%20where%20location%3D%22'</span> . $location_code . <span class="string">'%22&format=json'</span>;<br />
+	$file_contents = file_get_contents( $url );<br />
+	$weather_data = json_decode( $file_contents, true );<br />
+	<span class="keyword">if</span>( is_array( $weather_data ) ) {<br />
+	&nbsp;&nbsp;&nbsp;<span class="keyword">if</span>( isset( $weather_data[<span class="string">'query'</span>][<span class="string">'results'</span>][<span class="string">'channel'</span>][<span class="string">'item'</span>][<span class="string">'condition'</span>][<span class="string">'text'</span>] ) ) {<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$condition_text = $weather_data[<span class="string">'query'</span>][<span class="string">'results'</span>][<span class="string">'channel'</span>][<span class="string">'item'</span>][<span class="string">'condition'</span>][<span class="string">'text'</span>];<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">echo</span> <span class="string">'The weather in London is '</span> . $condition_text;<br />
+	&nbsp;&nbsp;&nbsp;}<br />
+	}<br />
+	?&gt;</div>
+	<p><strong>Please note, this code worked at the time of writing. Because it uses Yahoo!'s data, they may change the permissions of the data or even stop supplying it. Because of this, we can't guarantee this will work, but Yahoo! are a trusted and reliable source so will likely keep the data available for some time - thank you!</strong></p>
+		<ul class="commands">
+			<li><a href="php.html">End Tutorial</a></li>
+			<li><a href="javascript:previous(11);">Previous</a></li>
+			<li class="next"><a href="javascript:next(11);">Next</a></li>
+		</ul>
+	</div>
+	<div class="step" id="step_12">
+	<p>The above code takes a <a href="javascript:define('url');" class="definition">URL</a> (web address), reads in the page contents and processes it as <a href="javascript:define('json');" class="definition">JSON</a>. If it all works, then it should produce an <a href="javascript:define('array');" class="definition">array</a> which contains data that your application can process into something useful.</p>
+		<ul class="commands">
+			<li><a href="php.html">End Tutorial</a></li>
+			<li><a href="javascript:previous(12);">Previous</a></li>
+			<li class="next"><a href="javascript:next(12);">Next</a></li>
+		</ul>
+	</div>
+	<div class="step" id="step_13">
+	<p>This is a very powerful part of computer systems called <a href="javascript:define('api');" class="definition">APIs</a> (Application Programming Interfaces). These are particularly popular on the web because they allow data to easily be passed around different websites and "mashed up" and combined. This combination of data can produce interesting results.</p>
+		<ul class="commands">
+			<li><a href="php.html">End Tutorial</a></li>
+			<li><a href="javascript:previous(13);">Previous</a></li>
+			<li class="next"><a href="javascript:next(13);">Next</a></li>
+		</ul>
+	</div>
+	<div class="step" id="step_14">
+	<p>Social networks, such as Facebook and Twitter open up their data for developers to access, too. This allows for the "Sign in with Facebook" buttons you may see on websites.</p>
+		<ul class="commands">
+			<li><a href="php.html">End Tutorial</a></li>
+			<li><a href="javascript:previous(14);">Previous</a></li>
+			<li class="next"><a href="javascript:next(14);">Next</a></li>
+		</ul>
+	</div>
+	<div class="step" id="step_15">
+	<p>You can also "<span class="code">include</span>" PHP files within other PHP files. This is useful on larger projects where there is a <span class="code">functions.php</span> file, for instance which stores a number of user-written functions which may be useful.</p>
+		<ul class="commands">
+			<li><a href="php.html">End Tutorial</a></li>
+			<li><a href="javascript:previous(15);">Previous</a></li>
+			<li class="next"><a href="javascript:next(15);">Next</a></li>
+		</ul>
+	</div>
+	<div class="step" id="step_16">
+	<p>This is done using the <span class="code">include</span> <a href="javascript:define('function');" class="definition">function</a>:</p>
+	<div class="code">
+	&lt;?php<br />
+	include(<span class="string">'functions.php'</span>);<br />
+	?&gt;	</div>
+		<ul class="commands">
+			<li><a href="php.html">End Tutorial</a></li>
+			<li><a href="javascript:previous(16);">Previous</a></li>
+			<li class="next"><a href="javascript:next(16);">Next</a></li>
+		</ul>
+	</div>
+	<div class="step" id="step_17">
+	<p>Within these tutorials we have only begun to scratch the surface of what can be achieved with PHP. You can build scripts which do very useful things such as image manipulation, data processing, database interaction and, of course, websites.</p>
+		<ul class="commands">
+			<li><a href="php.html">End Tutorial</a></li>
+			<li><a href="javascript:previous(17);">Previous</a></li>
+			<li class="next"><a href="javascript:next(17);">Next</a></li>
+		</ul>
+	</div>
+	<div class="step" id="step_18">
+	<p>If you wish to explore this further, take a look at the functions available on PHP.net, the PHP Manual. There are also many more tutorials online which can provide you with more information about using PHP.</p>
+		<ul class="commands">
+			<li><a href="php.html">End Tutorial</a></li>
+			<li><a href="javascript:previous(18);">Previous</a></li>
+			<li class="next"><a href="javascript:next(18);">Next</a></li>
+		</ul>
+	</div>
+	<div class="step" id="step_19">
+	<p>Good luck and happy programming!</p>
+		<ul class="commands">
+			<li><a href="php.html">End Tutorial</a></li>
+			<li><a href="javascript:previous(19);">Previous</a></li>
+			<li class="next"><a href="javascript:next(19);">Next</a></li>
+		</ul>
+	</div>
+	<div class="step complete" id="step_20">
+		<p>Tutorial Complete</p>
+		<ul class="commands">
+			<li><a href="javascript:previous(20);">Previous</a></li>
+			<li><a href="php.html">Back to PHP Tutorials</a></li>
+		</ul>
+	</div>
+</div>
+</body>
+</html>

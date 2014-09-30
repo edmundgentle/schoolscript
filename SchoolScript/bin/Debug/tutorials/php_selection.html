@@ -1,0 +1,202 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>PHP - Selection</title>
+<link href="supporting_files/style.css" rel="stylesheet" />
+<script src="supporting_files/jquery.js"></script>
+<script src="supporting_files/jquery-ui.js"></script>
+<script src="supporting_files/apprise-1.5.full.js"></script>
+<script src="supporting_files/php.js"></script>
+</head>
+<body>
+<div id="title">Selection</div>
+<div id="main">
+	<div class="step" id="step_1">
+  <p>When you write a program, you might not want some bits to run every time. For example, you may want to charge free delivery on orders over £25. To do this, we use <a href="javascript:define('selection');" class="definition">IF statements</a>.</p>
+  <ul class="commands">
+    <li><a href="php.html">End Tutorial</a></li>
+	<li class="next"><a href="javascript:next(1);">Next</a></li>
+  </ul>
+</div>
+<div class="step" id="step_2">
+  <p>To solve this problem we would use the following code:</p>
+  <div class="code"> &lt;?php<br />
+    <span class="keyword">if</span>( $total > 25.00 ) {<br />
+    &nbsp;&nbsp;&nbsp;$delivery = 0.00;<br />
+    }<span class="keyword">else</span>{<br />
+    &nbsp;&nbsp;&nbsp;$delivery = 5.99;<br />
+    }<br />
+    ?&gt; </div>
+  <p>This code says that if the total cost (in the variable <span class="code">$total</span>) is greater than (<span class="code">></span>) 25.00, then delivery costs 0.00, otherwise delivery costs 5.99.</p>
+  <ul class="commands">
+    <li><a href="php.html">End Tutorial</a></li>
+	<li><a href="javascript:previous(2);">Previous</a></li>
+	<li class="next"><a href="javascript:next(2);">Next</a></li>
+  </ul>
+</div>
+<div class="step" id="step_3">
+  <p>The IF statement may look a little confusing, but it's made up of a few very simple parts. First of all, every IF statement begins with the <a href="javascript:define('keyword');" class="definition">keyword</a> "if". This is followed by brackets which contain a <a href="javascript:define('condition');" class="definition">condition</a>.</p>
+  <ul class="commands">
+    <li><a href="php.html">End Tutorial</a></li>
+	<li><a href="javascript:previous(3);">Previous</a></li>
+	<li class="next"><a href="javascript:next(3);">Next</a></li>
+  </ul>
+</div>
+<div class="step" id="step_4">
+  <p>A condition is a <a href="javascript:define('boolean');" class="definition">Boolean</a> expression. See the Variables section for more on Boolean expressions. To recap, this could be less than, greater than, equal to or not equal to as well as combinations using AND and OR. For the IF to run the code within it, the condition must be "true".</p>
+  <ul class="commands">
+    <li><a href="php.html">End Tutorial</a></li>
+	<li><a href="javascript:previous(4);">Previous</a></li>
+	<li class="next"><a href="javascript:next(4);">Next</a></li>
+  </ul>
+</div>
+<div class="step" id="step_5">
+  <p>The next thing to point out are the curly brackets ( <span class="code">{ }</span> ) which we call braces. They mark out blocks of code. Code within braces is indented (by pressing the TAB key on your keyboard once) to make it easier to read. Anything within the braces following the IF statement and condition will run if the condition is "true".</p>
+  <ul class="commands">
+    <li><a href="php.html">End Tutorial</a></li>
+	<li><a href="javascript:previous(5);">Previous</a></li>
+	<li class="next"><a href="javascript:next(5);">Next</a></li>
+  </ul>
+</div>
+<div class="step" id="step_6">
+  <p>The final part included in the example above is the "else" condition. This means that if the condition is false, it will run the code following the else. An else condition doesn't need to be included in an IF.</p>
+  <ul class="commands">
+    <li><a href="php.html">End Tutorial</a></li>
+	<li><a href="javascript:previous(6);">Previous</a></li>
+	<li class="next"><a href="javascript:next(6);">Next</a></li>
+  </ul>
+</div>
+<div class="step" id="step_7">
+  <p>There is a lot to take in here, so we'll take a quick look back at IF statements before we move on. We'll use some examples:</p>
+  <div class="code"> &lt;?php<br />
+    <span class="keyword">if</span>( 5 == 2 ) {<br />
+    &nbsp;&nbsp;&nbsp;<span class="keyword">echo</span> <span class="string">"Five is the same as two!"</span>;<br />
+    }<br />
+    ?&gt; </div>
+  <p>This compares the values 5 and 2. If they are the same (which they aren't) then the code will output a string.</p>
+  <ul class="commands">
+    <li><a href="php.html">End Tutorial</a></li>
+	<li><a href="javascript:previous(7);">Previous</a></li>
+	<li class="next"><a href="javascript:next(7);">Next</a></li>
+  </ul>
+</div>
+<div class="step" id="step_8">
+  <div class="code"> &lt;?php<br />
+    $total = 50.47;<br />
+    $vat = 0.00;<br />
+    $delivery = 4.99;<br />
+    $vat_exempt = <span class="keyword">false</span>;<br />
+    $free_delivery = <span class="keyword">false</span>; <br />
+    <br />
+    <span class="keyword">if</span>( $total > 25 ) {<br />
+    &nbsp;&nbsp;&nbsp;$delivery = 0;<br />
+    &nbsp;&nbsp;&nbsp;$free_delivery = <span class="keyword">true</span>;<br />
+    }<br />
+    <br />
+    <span class="keyword">if</span>($vat_exempt == <span class="keyword">false</span>) {<br />
+    &nbsp;&nbsp;&nbsp;$vat = ($total + $delivery) * 0.20;<br />
+    }<br />
+    ?&gt; </div>
+  <p>This example checks the price of the order. If the order is over £25, then the customer receives free delivery. If the customer is not VAT exempt, then they are charged 20% of their order as VAT.</p>
+  <ul class="commands">
+    <li><a href="php.html">End Tutorial</a></li>
+	<li><a href="javascript:previous(8);">Previous</a></li>
+	<li class="next"><a href="javascript:next(8);">Next</a></li>
+  </ul>
+</div>
+<div class="step" id="step_9">
+  <div class="code"> &lt;?php<br />
+    $fav_colour = <span class="string">"red"</span>;<br />
+    <span class="keyword">if</span>( $fav_colour == <span class="string">"blue"</span> ) {<br />
+    &nbsp;&nbsp;&nbsp;<span class="keyword">echo</span> <span class="string">"We have the same favourite colour!</span>";<br />
+    }<span class="keyword">else</span>{<br />
+    &nbsp;&nbsp;&nbsp;<span class="keyword">echo</span> <span class="string">"We have different favourite colours. Your favourite colour is "</span> . $fav_colour;<br />
+    }<br />
+    ?&gt; </div>
+  <ul class="commands">
+    <li><a href="php.html">End Tutorial</a></li>
+	<li><a href="javascript:previous(9);">Previous</a></li>
+	<li class="next"><a href="javascript:next(9);">Next</a></li>
+  </ul>
+</div>
+<div class="step" id="step_10">
+  <p>If the favourite colour is blue, then it outputs the "same favourite" message. If not, then it outputs the "different favourite" message.</p>
+  <ul class="commands">
+    <li><a href="php.html">End Tutorial</a></li>
+	<li><a href="javascript:previous(10);">Previous</a></li>
+	<li class="next"><a href="javascript:next(10);">Next</a></li>
+  </ul>
+</div>
+<div class="step" id="step_11">
+  <p>We can take IF statements one level further using "elseif". At the moment, we can try using one condition. If it doesn't match, then it just uses the code within the "else" block if it has been provided.</p>
+  <ul class="commands">
+    <li><a href="php.html">End Tutorial</a></li>
+	<li><a href="javascript:previous(11);">Previous</a></li>
+	<li class="next"><a href="javascript:next(11);">Next</a></li>
+  </ul>
+</div>
+<div class="step" id="step_12">
+  <p>Using "elseif", we can have the program check for different conditions if the first one doesn't match. For example:</p>
+  <div class="code"> &lt;?php<br />
+    $fav_colour = <span class="string">"blue"</span>;<br />
+    <br />
+    <span class="keyword">if</span>( $fav_colour == <span class="string">"red"</span> ) {<br />
+    &nbsp;&nbsp;&nbsp;<span class="keyword">echo</span> <span class="string">"My friend likes red too!"</span>;<br />
+    }<span class="keyword">elseif</span>( $fav_colour == <span class="string">"blue"</span> ) {<br />
+    &nbsp;&nbsp;&nbsp;<span class="keyword">echo</span> <span class="string">"Same favourite colour as me!"</span>;<br />
+    }<span class="keyword">elseif</span>( $fav_colour == <span class="string">"green"</span> ) {<br />
+    &nbsp;&nbsp;&nbsp;<span class="keyword">echo</span> <span class="string">"Grass is green..."</span>;<br />
+    }<span class="keyword">else</span>{<br />
+    &nbsp;&nbsp;&nbsp;<span class="keyword">echo</span> <span class="string">"I don't know anything about that colour."</span>;<br />
+    }<br />
+    ?&gt; </div>
+  <ul class="commands">
+    <li><a href="php.html">End Tutorial</a></li>
+	<li><a href="javascript:previous(12);">Previous</a></li>
+	<li class="next"><a href="javascript:next(12);">Next</a></li>
+  </ul>
+</div>
+<div class="step" id="step_13">
+  <p>Here we have different options for each of three colours. If the favourite colour is red, blue or green then it displays a relevant message, otherwise it shows a message saying that it doesn't know anything about a colour.</p>
+  <ul class="commands">
+    <li><a href="php.html">End Tutorial</a></li>
+	<li><a href="javascript:previous(13);">Previous</a></li>
+	<li class="next"><a href="javascript:next(13);">Next</a></li>
+  </ul>
+</div>
+<div class="step" id="step_14">
+  <p>An IF statement can have as many "elseif"s as it needs, but it can only have one "if" and one "else".</p>
+  <ul class="commands">
+    <li><a href="php.html">End Tutorial</a></li>
+	<li><a href="javascript:previous(14);">Previous</a></li>
+	<li class="next"><a href="javascript:next(14);">Next</a></li>
+  </ul>
+</div>
+<div class="task" id="step_15">
+  <p>Task: Write a program that has a variable <span class="code">$age</span>. If age is less than 18 then show a message saying "You must be at least 18", otherwise show a message saying "Hello!".</p>
+  <ul class="commands">
+    <li><a href="php.html">End Tutorial</a></li>
+	<li><a href="javascript:previous(15);">Previous</a></li>
+	<li class="next"><a href="javascript:next(15);">Next</a></li>
+  </ul>
+</div>
+<div class="task" id="step_16">
+  <p>Task: Write a program with a variable called <span class="code">$hour</span>. This will hold the current hour out of a 24 hour clock. If the time is less than 7 or grater than 21, show a message saying "night time". If it is between 7 and 12, show a message saying "morning". Between 12 and 13, say "lunch time". Between 13 and 18, say "afternoon". Between 18 and 21, say "evening".</p>
+  <ul class="commands">
+    <li><a href="php.html">End Tutorial</a></li>
+	<li><a href="javascript:previous(16);">Previous</a></li>
+	<li class="next"><a href="javascript:next(16);">Next</a></li>
+  </ul>
+</div>
+	<div class="step complete" id="step_17">
+		<p>Tutorial Complete</p>
+		<ul class="commands">
+			<li><a href="javascript:previous(17);">Previous</a></li>
+			<li><a href="php.html">Back to PHP Tutorials</a></li>
+			<li><a href="php_iteration.html">Next Tutorial</a></li>
+		</ul>
+	</div>
+</div>
+</body>
+</html>

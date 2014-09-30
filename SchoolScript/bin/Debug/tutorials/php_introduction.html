@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>PHP - Introduction</title>
+<link href="supporting_files/style.css" rel="stylesheet" />
+<script src="supporting_files/jquery.js"></script>
+<script src="supporting_files/jquery-ui.js"></script>
+<script src="supporting_files/apprise-1.5.full.js"></script>
+<script src="supporting_files/php.js"></script>
+</head>
+<body>
+<div id="title">Introduction</div>
+<div id="main">
+	<div class="step" id="step_1">
+		<p>PHP is a programming language most commonly used when making websites. It is embedded within web pages and runs when the user asks for the web page.</p>
+		<ul class="commands">
+			<li><a href="php.html">End Tutorial</a></li>
+			<li class="next"><a href="javascript:next(1);">Next</a></li>
+		</ul>
+	</div>
+	<div class="step"  id="step_2">
+		<p>It is mainly used for creating logins and user accounts, as well as commenting systems and website management tools. It is very simple to learn and use, which is why it's so popular. It is used by small businesses and very large businesses such as Facebook.</p>
+		<ul class="commands">
+			<li><a href="php.html">End Tutorial</a></li>
+			<li><a href="javascript:previous(2);">Previous</a></li>
+			<li class="next"><a href="javascript:next(2);">Next</a></li>
+		</ul>
+	</div>
+	<div class="step" id="step_3">
+		<p>It's important to remember that programming languages are all languages and so will be difficult at first, but as you practice, you will find it becomes far more natural and easy to understand. Also, as you learn more programming languages, others will become far easier to learn. PHP is a very good starting point, because it is much simpler and less strict than other languages (it is weakly-typed - as we will discuss in the next section).</p>
+		<ul class="commands">
+			<li><a href="php.html">End Tutorial</a></li>
+			<li><a href="javascript:previous(3);">Previous</a></li>
+			<li class="next"><a href="javascript:next(3);">Next</a></li>
+		</ul>
+	</div>
+	<div class="step" id="step_4">
+		<p>All PHP code must start with <span class="code">&lt;?php</span> and must end with <span class="code">?&gt;</span>. Within that, any amount of code may be placed.</p>
+		<ul class="commands">
+			<li><a href="php.html">End Tutorial</a></li>
+			<li><a href="javascript:previous(4);">Previous</a></li>
+			<li class="next"><a href="javascript:next(4);">Next</a></li>
+		</ul>
+	</div>
+	<div class="step" id="step_5">
+		<p>All instructions are run in the order in which they appear in the file. They start with the first instruction and then the code stops once the last instruction has finished running (<a class="definition" href="javascript:define('executing');">executing</a>).</p>
+		<ul class="commands">
+			<li><a href="php.html">End Tutorial</a></li>
+			<li><a href="javascript:previous(5);">Previous</a></li>
+			<li class="next"><a href="javascript:next(5);">Next</a></li>
+		</ul>
+	</div>
+	<div class="step" id="step_6">
+		<p>We are going to write a <a href="javascript:define('script');" class="definition">script</a> called "Hello World", which just writes out the words "Hello World" to the output panel (the box at the bottom of the window).</p>
+		<ul class="commands">
+			<li><a href="php.html">End Tutorial</a></li>
+			<li><a href="javascript:previous(6);">Previous</a></li>
+			<li class="next"><a href="javascript:next(6);">Next</a></li>
+		</ul>
+	</div>
+	<div class="step" id="step_7">
+		<p>First, make sure that you have a PHP file open. Go to File Type in the top menu and select PHP from the list. In the code box to the left, write the following code:</p>
+<div class="code">
+&lt;?php<br />
+<span class="keyword">echo</span> <span class="string">"Hello World"</span>;<br />
+?&gt;</div>
+<p>Then press "Run". You should see "Hello World" in the output panel. As you write code, you can run it as you go by going to Run in the top menu then Run. It will (try and) <a href="javascript:define('executing');" class="definition">run any code</a> in the code box.</p>
+		<ul class="commands">
+			<li><a href="php.html">End Tutorial</a></li>
+			<li><a href="javascript:previous(7);">Previous</a></li>
+			<li class="next"><a href="javascript:next(7);">Next</a></li>
+		</ul>
+	</div>
+	<div class="step" id="step_8">
+		<p>Let's take a look at each line of code we've written. The first line starts the PHP code, and the last line ends the PHP code. The line in the middle does all the work.</p>
+		<ul class="commands">
+			<li><a href="php.html">End Tutorial</a></li>
+			<li><a href="javascript:previous(8);">Previous</a></li>
+			<li class="next"><a href="javascript:next(8);">Next</a></li>
+		</ul>
+	</div>
+	<div class="step" id="step_9">
+		<p><span class="code">echo</span> is used to write stuff to the output panel. To use it, you simply write <span class="code">echo</span> then a space then whatever you want to output.</p>
+		<ul class="commands">
+			<li><a href="php.html">End Tutorial</a></li>
+			<li><a href="javascript:previous(9);">Previous</a></li>
+			<li class="next"><a href="javascript:next(9);">Next</a></li>
+		</ul>
+	</div>
+	<div class="step" id="step_10">
+		<p>You'll notice that most lines of code in PHP end with a semi colon (<span class="code">;</span>) - only special <a href="javascript:define('instruction');" class="definition">instructions</a> don't, we'll get to these later!</p>
+		<ul class="commands">
+			<li><a href="php.html">End Tutorial</a></li>
+			<li><a href="javascript:previous(10);">Previous</a></li>
+			<li class="next"><a href="javascript:next(10);">Next</a></li>
+		</ul>
+	</div>
+	<div class="step" id="step_11">
+		<p>Finally, Hello World is surrounded by quote marks (<span class="code">"</span>). We could also surround it with single quote marks (<span class="code">'</span>). Quote marks point out where we've got text (which is called a <a href="javascript:define('string');" class="definition">string</a> in programming). It makes sure the text isn't confused with an instruction.</p>
+		<ul class="commands">
+			<li><a href="php.html">End Tutorial</a></li>
+			<li><a href="javascript:previous(11);">Previous</a></li>
+			<li class="next"><a href="javascript:next(11);">Next</a></li>
+		</ul>
+	</div>
+	<div class="step" id="step_12">
+		<p>We can also include <a href="javascript:define('comment');" class="definition">comments</a> within the code, which can help explain what's going on. In PHP, you start a comment with two forward slashes (<span class="code">//</span>).</p>
+		<div class="code">&lt;?php<br />
+		  <span class="comment">//this is a comment, and will not<br />
+		//be run even if we write code<br />
+		<br />
+		//echo &quot;Hello world&quot;;</span><br />
+		?&gt;</div>
+		<ul class="commands">
+			<li><a href="php.html">End Tutorial</a></li>
+			<li><a href="javascript:previous(12);">Previous</a></li>
+			<li class="next"><a href="javascript:next(12);">Next</a></li>
+		</ul>
+	</div>
+	<div class="task" id="step_13">
+		<p>Task: Write a script which outputs "Hello everyone!"</p>
+		<ul class="commands">
+			<li><a href="php.html">End Tutorial</a></li>
+			<li><a href="javascript:previous(13);">Previous</a></li>
+			<li class="next"><a href="javascript:next(13);">Next</a></li>
+		</ul>
+	</div>
+	<div class="task" id="step_14">
+		<p>Task: Write a script which outputs your name</p>
+		<ul class="commands">
+			<li><a href="php.html">End Tutorial</a></li>
+			<li><a href="javascript:previous(14);">Previous</a></li>
+			<li class="next"><a href="javascript:next(14);">Next</a></li>
+		</ul>
+	</div>
+	<div class="step complete" id="step_15">
+		<p>Tutorial Complete</p>
+		<ul class="commands">
+			<li><a href="javascript:previous(15);">Previous</a></li>
+			<li><a href="php.html">Back to PHP Tutorials</a></li>
+			<li><a href="php_variables.html">Next Tutorial</a></li>
+		</ul>
+	</div>
+</div>
+</body>
+</html>

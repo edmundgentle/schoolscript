@@ -1,0 +1,238 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>PHP - Classes &amp; Objects</title>
+<link href="supporting_files/style.css" rel="stylesheet" />
+<script src="supporting_files/jquery.js"></script>
+<script src="supporting_files/jquery-ui.js"></script>
+<script src="supporting_files/apprise-1.5.full.js"></script>
+<script src="supporting_files/php.js"></script>
+</head>
+<body>
+<div id="title">Classes &amp; Objects</div>
+<div id="main">
+	<div class="step" id="step_1">
+	<p>We can group together similar <a href="javascript:define('variable');" class="definition">variables</a> and <a href="javascript:define('function');" class="definition">functions</a> into something called a "<a href="javascript:define('class');" class="definition">class</a>".</p>
+	<ul class="commands">
+		<li><a href="php.html">End Tutorial</a></li>
+		<li class="next"><a href="javascript:next(1);">Next</a></li>
+	</ul>
+	</div>
+	<div class="step" id="step_2">
+	<p>This is what is referred to as <a href="javascript:define('oop');" class="definition">Object Oriented Programming</a> (OOP). Many programming languages are entirely object oriented, PHP only includes it as a feature. If you want to learn more languages, such as Java or C#, you should make sure you fully understand OOP.</p>
+	<ul class="commands">
+		<li><a href="php.html">End Tutorial</a></li>
+		<li><a href="javascript:previous(2);">Previous</a></li>
+		<li class="next"><a href="javascript:next(2);">Next</a></li>
+	</ul>
+	</div>
+	<div class="step" id="step_3">
+	<p><a href="javascript:define('variable');" class="definition">Variables</a> within a class are called "<a href="javascript:define('attribute');" class="definition">attributes</a>" and <a href="javascript:define('function');" class="definition">functions</a> within a class are called "<a href="javascript:define('method');" class="definition">methods</a>".</p>
+	<ul class="commands">
+		<li><a href="php.html">End Tutorial</a></li>
+		<li><a href="javascript:previous(3);">Previous</a></li>
+		<li class="next"><a href="javascript:next(3);">Next</a></li>
+	</ul>
+	</div>
+	<div class="step" id="step_4">
+	<p>When we looked at <a href="javascript:define('function');" class="definition">functions</a>, we discussed "<a href="javascript:define('scope');" class="definition">scope</a>" of variables. To recap, we had two scopes: <a href="javascript:define('global');" class="definition">global</a> and <a href="javascript:define('local');" class="definition">local</a>. Global variables could be accessed by the entire program whereas local variables can only be accessed within a function.</p>
+	<ul class="commands">
+		<li><a href="php.html">End Tutorial</a></li>
+		<li><a href="javascript:previous(4);">Previous</a></li>
+		<li class="next"><a href="javascript:next(4);">Next</a></li>
+	</ul>
+	</div>
+	<div class="step" id="step_5">
+	<p><a href="javascript:define('class');" class="definition">Classes</a> introduce another scope: class-level variables. These variables are the "<a href="javascript:define('attribute');" class="definition">attributes</a>" we mentioned before.</p>
+	<ul class="commands">
+		<li><a href="php.html">End Tutorial</a></li>
+		<li><a href="javascript:previous(5);">Previous</a></li>
+		<li class="next"><a href="javascript:next(5);">Next</a></li>
+	</ul>
+	</div>
+	<div class="step" id="step_6">
+	<p><a href="javascript:define('class');" class="definition">Classes</a> are designed to represent real world objects. So we could have a class called "Car" which has some <a href="javascript:define('attribute');" class="definition">attributes</a> of "colour" and "registration code". It could have the <a href="javascript:define('method');" class="definition">methods</a> of "accelerate" and "start engine".</p>
+	<ul class="commands">
+		<li><a href="php.html">End Tutorial</a></li>
+		<li><a href="javascript:previous(6);">Previous</a></li>
+		<li class="next"><a href="javascript:next(6);">Next</a></li>
+	</ul>
+	</div>
+	<div class="step" id="step_7">
+	<p>Methods are the tasks that the object can do and the attributes are things which describe the object.</p>
+	<ul class="commands">
+		<li><a href="php.html">End Tutorial</a></li>
+		<li><a href="javascript:previous(7);">Previous</a></li>
+		<li class="next"><a href="javascript:next(7);">Next</a></li>
+	</ul>
+	</div>
+	<div class="step" id="step_8">
+	<p>You will notice the use of the word "object" there. An "<a href="javascript:define('object');" class="definition">object</a>" is what we call an "<a href="javascript:define('instance');" class="definition">instance</a>" of a class. For example, if we have a "Car" class then we would create objects of a car. These behave like variables, and we can save them into variables where we can perform tasks on the objects.</p>
+	<ul class="commands">
+		<li><a href="php.html">End Tutorial</a></li>
+		<li><a href="javascript:previous(8);">Previous</a></li>
+		<li class="next"><a href="javascript:next(8);">Next</a></li>
+	</ul>
+	</div>
+	<div class="step" id="step_9">
+	<p>Let's have a look at an example:</p>
+	<div class="code">
+	&lt;?php<br />
+	<span class="keyword">class</span> Car {<br />
+	&nbsp;&nbsp;&nbsp;<span class="comment">//These are attributes</span><br />
+	&nbsp;&nbsp;&nbsp;<span class="keyword">private</span> $colour;<br />
+	&nbsp;&nbsp;&nbsp;<span class="keyword">public</span> $registration_no;<br />
+	<br />
+	&nbsp;&nbsp;&nbsp;<span class="comment">//These are methods</span> <br />
+	&nbsp;&nbsp;&nbsp;<span class="keyword">function</span> __construct( $colour , $reg ) {<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">//we use $this->... For class-level variables. Other variables are just local variables.</span><br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$this->colour = $colour;<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$this->registration_no = $reg;<br />
+	&nbsp;&nbsp;&nbsp;}<br />
+	<br />
+	&nbsp;&nbsp;&nbsp;<span class="keyword">public function</span> change_colour( $new_colour ) {<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$this->colour = $new_colour;<br />
+	&nbsp;&nbsp;&nbsp;}<br />
+	}<br />
+	?&gt;	</div>
+	<ul class="commands">
+		<li><a href="php.html">End Tutorial</a></li>
+		<li><a href="javascript:previous(9);">Previous</a></li>
+		<li class="next"><a href="javascript:next(9);">Next</a></li>
+	</ul>
+	</div>
+	<div class="step" id="step_10">
+	<p>Above is the code to lay out the structure of a <a href="javascript:define('class');" class="definition">class</a>. You use the <a href="javascript:define('keyword');" class="definition">keyword</a> "<span class="code">class</span>" and follow it with the name of the class (alphanumeric and underscore).</p>
+	<ul class="commands">
+		<li><a href="php.html">End Tutorial</a></li>
+		<li><a href="javascript:previous(10);">Previous</a></li>
+		<li class="next"><a href="javascript:next(10);">Next</a></li>
+	</ul>
+	</div>
+	<div class="step" id="step_11">
+	<p>Within the braces, we first have the <a href="javascript:define('attribute');" class="definition">attributes</a> (variables) within the class. These can be set to either "<a href="javascript:define('private');" class="definition">private</a>" (can't be accessed from outside the class) or "<a href="javascript:define('public');" class="definition">public</a>" (can be accessed from outside the class). We'll have a closer look at the difference in a minute.</p>
+	<ul class="commands">
+		<li><a href="php.html">End Tutorial</a></li>
+		<li><a href="javascript:previous(11);">Previous</a></li>
+		<li class="next"><a href="javascript:next(11);">Next</a></li>
+	</ul>
+	</div>
+	<div class="step" id="step_12">
+	<p>Below that, we have a <a href="javascript:define('method');" class="definition">method</a> (function) called the "<a href="javascript:define('constructor');" class="definition">constructor</a>". The name of this function should be "<span class="code">__construct</span>". We will go into more detail about the constructor with the next example.</p>
+	<ul class="commands">
+		<li><a href="php.html">End Tutorial</a></li>
+		<li><a href="javascript:previous(12);">Previous</a></li>
+		<li class="next"><a href="javascript:next(12);">Next</a></li>
+	</ul>
+	</div>
+	<div class="step" id="step_13">
+	<p>The final piece of code within the braces are the behaviours (methods or functions). Our sample behaviour is called "<span class="code">change_colour</span>". You'll notice this is also "<span class="code">public</span>". Methods can be <a href="javascript:define('public');" class="definition">public</a> or <a href="javascript:define('private');" class="definition">private</a> like the attributes.</p>
+	<ul class="commands">
+		<li><a href="php.html">End Tutorial</a></li>
+		<li><a href="javascript:previous(13);">Previous</a></li>
+		<li class="next"><a href="javascript:next(13);">Next</a></li>
+	</ul>
+	</div>
+	<div class="step" id="step_14">
+	<p>So, to use the class, we would do the following:</p>
+	<div class="code">
+	&lt;?php<br />
+	$my_car = <span class="keyword">new</span> Car( <span class="string">"blue"</span> , <span class="string">"NR53 ZAQ"</span> );<br />
+	?&gt;	</div>
+	<ul class="commands">
+		<li><a href="php.html">End Tutorial</a></li>
+		<li><a href="javascript:previous(14);">Previous</a></li>
+		<li class="next"><a href="javascript:next(14);">Next</a></li>
+	</ul>
+	</div>
+	<div class="step" id="step_15">
+	<p>To create a new <a href="javascript:define('object');" class="definition">object</a> ("<a href="javascript:define('instance');" class="definition">instance</a>" of a <a href="javascript:define('class');" class="definition">class</a>), we use the "new" <a href="javascript:define('keyword');" class="definition">keyword</a> followed by the name of the class. This then calls the <a href="javascript:define('constructor');" class="definition">constructor</a> method we wrote. Because our constructor takes in the <a href="javascript:define('parameter');" class="definition">parameters</a> <span class="code">$colour</span> and <span class="code">$reg</span>, we need to make sure we provide these when we create the object.</p>
+	<ul class="commands">
+		<li><a href="php.html">End Tutorial</a></li>
+		<li><a href="javascript:previous(15);">Previous</a></li>
+		<li class="next"><a href="javascript:next(15);">Next</a></li>
+	</ul>
+	</div>
+	<div class="step" id="step_16">
+	<p>The <span class="code">$my_car</span> variable is now a <span class="code">Car</span> object. We can access any of the <a href="javascript:define('public');" class="definition">public elements</a> of the class using this variable.</p>
+	<ul class="commands">
+		<li><a href="php.html">End Tutorial</a></li>
+		<li><a href="javascript:previous(16);">Previous</a></li>
+		<li class="next"><a href="javascript:next(16);">Next</a></li>
+	</ul>
+	</div>
+	<div class="step" id="step_17">
+	<p>For example, the <a href="javascript:define('attribute');" class="definition">attribute</a> <span class="code">$registration_no</span> is public, so we can &quot;get&quot; and &quot;set&quot; this like so:</p>
+	<div class="code">
+	&lt;?php<br />
+	<span class="comment">//reading a value</span><br />
+	<span class="keyword">echo</span> <span class="string">"The registration number is "</span> . $my_car->registration_no;<br />
+	<span class="comment">//writing a value</span><br />
+	$my_car->registration_no = <span class="string">"JA93 PAU"</span>;<br />
+	?&gt;	</div>
+	<ul class="commands">
+		<li><a href="php.html">End Tutorial</a></li>
+		<li><a href="javascript:previous(17);">Previous</a></li>
+		<li class="next"><a href="javascript:next(17);">Next</a></li>
+	</ul>
+	</div>
+	<div class="step" id="step_18">
+	<p>It can be accessed within the class using the <span class="code">$this</span> variable in place of <span class="code">$my_car</span> (as you'll see in the example declaration of <span class="code">Car</span>).</p>
+	<ul class="commands">
+		<li><a href="php.html">End Tutorial</a></li>
+		<li><a href="javascript:previous(18);">Previous</a></li>
+		<li class="next"><a href="javascript:next(18);">Next</a></li>
+	</ul>
+	</div>
+	<div class="step" id="step_19">
+	<p>We can do the same with <a href="javascript:define('public');" class="definition">public</a> <a href="javascript:define('method');" class="definition">methods</a> (apart from the <a href="javascript:define('constructor');" class="definition">constructor</a>):</p>
+	<div class="code">
+	&lt;?php<br />
+	$my_car->change_colour( <span class="string">"red"</span> );<br />
+	?&gt;	</div>
+	<ul class="commands">
+		<li><a href="php.html">End Tutorial</a></li>
+		<li><a href="javascript:previous(19);">Previous</a></li>
+		<li class="next"><a href="javascript:next(19);">Next</a></li>
+	</ul>
+	</div>
+	<div class="step" id="step_20">
+	<p>We can't access <a href="javascript:define('private');" class="definition">private</a> elements. For example, the <a href="javascript:define('attribute');" class="definition">attribute</a> <span class="code">$colour</span> is private, so the following will produce an error:</p>
+	<div class="code">
+	&lt;?php<br />
+	<span class="keyword">echo</span> <span class="string">"The car is "</span> . $my_car->colour;<br />
+	?&gt;	</div>
+	<ul class="commands">
+		<li><a href="php.html">End Tutorial</a></li>
+		<li><a href="javascript:previous(20);">Previous</a></li>
+		<li class="next"><a href="javascript:next(20);">Next</a></li>
+	</ul>
+	</div>
+	<div class="step" id="step_21">
+	<p>If we want to be able to read the colour, we would need to produce a "<a href="javascript:define('getter');" class="definition">getter</a>" method which returns the value of the colour.</p>
+	<ul class="commands">
+		<li><a href="php.html">End Tutorial</a></li>
+		<li><a href="javascript:previous(21);">Previous</a></li>
+		<li class="next"><a href="javascript:next(21);">Next</a></li>
+	</ul>
+	</div>
+	<div class="step" id="step_22">
+	<p>We have already written a "<a href="javascript:define('setter');" class="definition">setter</a>" method for <span class="code">$colour</span> (<span class="code">change_colour</span>).</p>
+	<ul class="commands">
+		<li><a href="php.html">End Tutorial</a></li>
+		<li><a href="javascript:previous(22);">Previous</a></li>
+		<li class="next"><a href="javascript:next(22);">Next</a></li>
+	</ul>
+	</div>
+	<div class="step complete" id="step_23">
+		<p>Tutorial Complete</p>
+		<ul class="commands">
+			<li><a href="javascript:previous(23);">Previous</a></li>
+			<li><a href="php.html">Back to PHP Tutorials</a></li>
+			<li><a href="php_additional.html">Next Tutorial</a></li>
+		</ul>
+	</div>
+</div>
+</body>
+</html>

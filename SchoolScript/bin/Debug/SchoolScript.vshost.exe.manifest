@@ -1,0 +1,747 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly manifestVersion="1.0" xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1">
+  <asmv1:assemblyIdentity version="1.0.0.0" name="SchoolScript.exe" publicKeyToken="0000000000000000" language="en" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="SchoolScript" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="SchoolScript.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="LocalIntranet" Description="Default rights given to applications on the local intranet" Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC Manifest Options
+            If you want to change the Windows User Account Control level replace the 
+            requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            Specifying requestedExecutionLevel node will disable file and registry virtualization.
+            If you want to utilize File and Registry Virtualization for backward 
+            compatibility then delete the requestedExecutionLevel node.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SchoolScript.exe" size="146432">
+      <assemblyIdentity name="SchoolScript" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>+Zg0EQpWAxzcCSFVB+8GBLGm+8Y=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="phplib\ext\php_bz2.dll" size="59904">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>w5Nyt7+KQEK+oNibtaz/arEQI3w=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="phplib\ext\php_com_dotnet.dll" size="71168">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>nc+S3cSK4PpAEGFa6Kn5ex1hfmw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="phplib\ext\php_curl.dll" size="459776">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>IH9aHcgIMyegu2OD9N2zhkRwAg8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="phplib\ext\php_enchant.dll" size="18944">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>OgpQi2ScrPFBY7b3XtAvPasKxEI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="phplib\ext\php_exif.dll" size="43008">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>ruiLrzl3Ki0wDVa71c+l2JqiquQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="phplib\ext\php_fileinfo.dll" size="2353664">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>zzMyHCcqWXacJfNAscJg7Zxnkgo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="phplib\ext\php_gd2.dll" size="1442816">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>UAUt8I2djFolYJoI1CEwU16vunc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="phplib\ext\php_gettext.dll" size="39424">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>6FWCFdPaxaok2/9wuZ0CfXeb+h0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="phplib\ext\php_gmp.dll" size="226304">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>NOS3AIUwS6bV6b15wJNuB0CfcoI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="phplib\ext\php_imap.dll" size="814592">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>4dO9SLS3gPmE+GAlfqqSQ+xtu1Q=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="phplib\ext\php_interbase.dll" size="64000">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>BnGztV1BlqZoELvt/2jqDQdMavg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="phplib\ext\php_intl.dll" size="181760">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>wABoNxsVKtNcAXPEW4I6MZefTu8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="phplib\ext\php_ldap.dll" size="158208">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>nwjwT3QsPF/7biSv6YaGv9XxoaQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="phplib\ext\php_mbstring.dll" size="1209856">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>c1hJw9MdEJbpxExCoiht3Kqg+oU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="phplib\ext\php_mysql.dll" size="35840">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>7jDGNn/YdfzsYn8u8cLGLjP4GZw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="phplib\ext\php_mysqli.dll" size="90624">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>GAG5YrYpDTFca2befmS3AyFKh2E=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="phplib\ext\php_oci8.dll" size="138752">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>LB9N2ly53JBqbUtprIEt5vGHXtI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="phplib\ext\php_oci8_11g.dll" size="139776">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Bm88MBY/EoVjQVdrVd+Cv4cmdsg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="phplib\ext\php_openssl.dll" size="72704">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>4v7gElMG3OgL1F+zo7xgKQQRoM8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="phplib\ext\php_pdo_firebird.dll" size="21504">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>hKSM9R83CmCBwmuH2aXK0VHjzpY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="phplib\ext\php_pdo_mysql.dll" size="24576">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>U6Ydy+ts97Ymubyy+9ji7HAxWf8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="phplib\ext\php_pdo_oci.dll" size="24064">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>hKVXankJHEdngiK/Lg4Itumq3uU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="phplib\ext\php_pdo_odbc.dll" size="20992">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>ABP4/e0VvE9go4RGiBSVdm8Kkxk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="phplib\ext\php_pdo_pgsql.dll" size="26624">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>MEnCquFf4tRoFLLI1rE7pQjxY9s=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="phplib\ext\php_pdo_sqlite.dll" size="417792">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>WwntC/bmlQuQFy5ZPFD7DvVTD7s=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="phplib\ext\php_pgsql.dll" size="90624">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>bq4rsGRzaRrF4UCplb58JhKMGJs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="phplib\ext\php_shmop.dll" size="11776">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>qHTdiEbK84tkdHuJKdOP7qdyepY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="phplib\ext\php_snmp.dll" size="316928">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>tAJPgVTijUdw1KDALmVP2MOCmXw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="phplib\ext\php_soap.dll" size="245248">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>EO/kiQzWqmeAEGR6K5o2zzGSx90=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="phplib\ext\php_sockets.dll" size="39936">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>N5sQvLwa9+glV0w8MulxACvpaU0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="phplib\ext\php_sqlite3.dll" size="686592">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>0uEE59+vynNRAuy/sxEMX741eGg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="phplib\ext\php_sybase_ct.dll" size="31232">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>3Cn0cKB6DUpJAr/oN6gJElTvQPk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="phplib\ext\php_tidy.dll" size="225792">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>mGjAEv5SG17ojou7rgK4zV3laGY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="phplib\ext\php_xmlrpc.dll" size="57856">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>UiDe58X7M1o/MiM52kzXwMkZN1M=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="phplib\ext\php_xsl.dll" size="220160">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>cjtHTdGrbPD2q7aJ4Kg8DNOtOb4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="phplib\glib-2.dll" size="1052672">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>TYk1No6zq5Vj5u4xFov0qSV/oMA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="phplib\gmodule-2.dll" size="16896">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>AOcamx/n9Pt6oJemntJD8xfC/q4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="phplib\icudt.dll" size="36">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>pl6oeAleSE5Ym2mvVefkIH2CoMs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="phplib\icudt46.dll" size="15195648">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>KxGf739cu2e0sIUsP57xe79rFEg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="phplib\icudt49.dll" size="17956864">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>VhWHAAKU0m9s1FfnEl0OsTq8Cog=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="phplib\icuin.dll" size="36">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Sp6lr63Mg2xKHrGFHU4G8/AHNgw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="phplib\icuin46.dll" size="1607168">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>acNfd682ec8vX336s2EleqPFVZk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="phplib\icuin49.dll" size="1686528">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Nk8PYme80HySmrFoPiBy8XnNju8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="phplib\icuio.dll" size="36">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>O9gBsBLv8zWwkGIS+m5oFP/y7M8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="phplib\icuio46.dll" size="46592">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>OFfSint9D5cFlSAiiVjVzmOPP7w=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="phplib\icuio49.dll" size="47104">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>KpbGuLXh3/zidN6SJaRdOIBH1k0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="phplib\icule.dll" size="36">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>r2KKsXuMvSHVQEzY1qjzN4nsFS4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="phplib\icule46.dll" size="196096">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>g4ayCd1uSGZH076P0oUBW/XpBTw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="phplib\icule49.dll" size="196096">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>R5zPsCsJsvnef61e/vHw1f+FDJE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="phplib\iculx.dll" size="36">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>XYF/lTW9CmVOsIzbpUyAQBLoKgg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="phplib\iculx46.dll" size="44032">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>hPtu+LSPTX/pIa5wpOyeIl1J2sc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="phplib\iculx49.dll" size="44032">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>R8p5QjwmsQ0RXCRg4Yhwjaw94BQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="phplib\icutest.dll" size="40">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>enrrCd0IO3aHvV2c0Z7O8dUWpsI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="phplib\icutest46.dll" size="55808">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>0oycTB6kKNXSRjQ4eplLR7qs0JA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="phplib\icutest49.dll" size="55808">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>SicOPHZqyCoJZMQukgzjOj0Pz6U=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="phplib\icutu.dll" size="36">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>4lbzbd6zw80zuJn18zhf8GBgJ7I=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="phplib\icutu46.dll" size="127488">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>J+rWdFCuwrRaIJua65SMUKmBgvs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="phplib\icutu49.dll" size="147456">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>HB4tVCqI0VW9jXVJgg+6oxw52qk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="phplib\icuuc.dll" size="36">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>kp+kRL6DmHwXOLU6iXsBZWMqZD4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="phplib\icuuc46.dll" size="1162752">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>8UvltbKX9NEsny+TEc19d7azNjI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="phplib\icuuc49.dll" size="1289728">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>/vL/4kFGENxnB0ggCVM4Wbp5ypg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="phplib\libeay32.dll" size="1020416">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>UdtpsP2WxoZ4ec0J49q+ywGa3Wk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="phplib\libenchant.dll" size="43008">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>4zi3VGOnutTqqO1mQyvZQVFlfhg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="phplib\libenchant_ispell.dll" size="44544">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>2+Xn8+C7OVpstcQAfbhecq5eypE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="phplib\libenchant_myspell.dll" size="293888">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>TIpOyag7yypFXtE2l1qZDTUkcq0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="phplib\libpq.dll" size="97792">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>4beEiMKfPc4oVMSBmK3N9FnU+vE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="phplib\libsasl.dll" size="68608">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>7UO3ngRXRORjSUByuUyX5YsbVxI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="phplib\license.txt" size="3286">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>7lT8Kd4xAaP0sVLUzGrJPeXOYNo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="phplib\php5apache2_2.dll" size="26624">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>TXaSvEiL4dODBm1yKdolMdXlm1w=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="phplib\php5apache2_2_filter.dll" size="23552">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>vlOZN+NozuesCtfsprZr4HpxNds=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="phplib\php5apache2_3.dll" size="26112">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>yIoXaEgHFiqqyzSL5Bfzz7lpWDQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="phplib\php5nsapi.dll" size="19456">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>kG0mP1weSj2BmCi/vy/DrwhaVxs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="phplib\php5ts.dll" size="6062080">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>OgVycsrrHRWy9gUOal5cmejYLTQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="phplib\php-win.exe" size="26624">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>qT81Q5l0+kwgaFguj7QLVMEb6rQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="phplib\readme-redist-bins.txt" size="21360">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Sd4LH48kKXMQEwPBmduQt2VcfDI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="phplib\ssleay32.dll" size="210432">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>+WE6sZZERIVohB6KKWniZTgf2W4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- A list of all Windows versions that this application is designed to work with. Windows will automatically select the most compatible environment.-->
+      <!-- If your application is designed to work with Windows 7, uncomment the following supportedOS node-->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}"/>-->
+    </application>
+  </compatibility>
+</asmv1:assembly>

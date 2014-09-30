@@ -1,0 +1,294 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>PHP - Variables</title>
+<link href="supporting_files/style.css" rel="stylesheet" />
+<script src="supporting_files/jquery.js"></script>
+<script src="supporting_files/jquery-ui.js"></script>
+<script src="supporting_files/apprise-1.5.full.js"></script>
+<script src="supporting_files/php.js"></script>
+</head>
+<body>
+<div id="title">Variables</div>
+<div id="main">
+	<div class="step" id="step_1">
+		<p><a href="javascript:define('variable');" class="definition">Variables</a> are bits of data which are stored during the running of the programming. They can be used to pass information between different <a href="javascript:define('instruction');" class="definition">instructions</a>.</p>
+		<ul class="commands">
+			<li><a href="php.html">End Tutorial</a></li>
+			<li class="next"><a href="javascript:next(1);">Next</a></li>
+		</ul>
+	</div>
+	<div class="step"  id="step_2">
+		<p>Variables have 3 key parts. The first part is the name. All variables must have a name. In PHP, the name must start with a dollar sign (<span class="code">$</span>) and must then have at least one alphabetic (upper case or lower case), numerical or underscore (<span class="code">_</span>) character. This is how you will access your variable's data.</p>
+		<ul class="commands">
+			<li><a href="php.html">End Tutorial</a></li>
+			<li><a href="javascript:previous(2);">Previous</a></li>
+			<li class="next"><a href="javascript:next(2);">Next</a></li>
+		</ul>
+	</div>
+	<div class="step" id="step_3">
+		<p>In PHP, the standard is to use lowercase characters with underscores in between each word. For example:</p>
+<div class="code">$my_variable<br />
+$bobs_variable<br  />
+$total<br />
+$score</div>
+		<ul class="commands">
+			<li><a href="php.html">End Tutorial</a></li>
+			<li><a href="javascript:previous(3);">Previous</a></li>
+			<li class="next"><a href="javascript:next(3);">Next</a></li>
+		</ul>
+	</div>
+	<div class="step" id="step_4">
+		<p>The second part of a variable is its <a href="javascript:define('types');" class="definition">type</a>. In PHP this isn't very important (PHP is a "weakly typed" language meaning that the type of variable doesn't matter).</p>
+		<ul class="commands">
+			<li><a href="php.html">End Tutorial</a></li>
+			<li><a href="javascript:previous(4);">Previous</a></li>
+			<li class="next"><a href="javascript:next(4);">Next</a></li>
+		</ul>
+	</div>
+	<div class="step" id="step_5">
+		<p>A variable can have a number of different types. This is based on the type of information it stores. This can be an <a href="javascript:define('integer');" class="definition">integer</a> (a whole number), a <a href="javascript:define('double');" class="definition">double</a> (any type of number - including decimals), <a href="javascript:define('string');" class="definition">string</a> (text) and <a href="javascript:define('boolean');" class="definition">Boolean</a> (either true or false). There are more types which we will discuss later on.</p>
+		<ul class="commands">
+			<li><a href="php.html">End Tutorial</a></li>
+			<li><a href="javascript:previous(5);">Previous</a></li>
+			<li class="next"><a href="javascript:next(5);">Next</a></li>
+		</ul>
+	</div>
+	<div class="step" id="step_6">
+		<p>The final part of a variable is its value. This can change at any point within the <a href="javascript:define('script');" class="definition">script</a>.</p>
+		<ul class="commands">
+			<li><a href="php.html">End Tutorial</a></li>
+			<li><a href="javascript:previous(6);">Previous</a></li>
+			<li class="next"><a href="javascript:next(6);">Next</a></li>
+		</ul>
+	</div>
+	<div class="step" id="step_7">
+		<p>The variable's name can be used to read and write the value. For example, you can set the value 5 to a variable called <span class="code">$number</span>:</p>
+<div class="code">
+&lt;?php<br />
+$number = 5;<br />
+?&gt;</div>
+		<ul class="commands">
+			<li><a href="php.html">End Tutorial</a></li>
+			<li><a href="javascript:previous(7);">Previous</a></li>
+			<li class="next"><a href="javascript:next(7);">Next</a></li>
+		</ul>
+	</div>
+	<div class="step" id="step_8">
+		<p>Or you can output the value of a string variable using <span class="code">echo</span>:</p>
+<div class="code">
+&lt;?php<br />
+$my_name = <span class="string">"Edmund"</span>;<br />
+<span class="keyword">echo</span> $my_name;<br />
+?&gt;</div>
+		<ul class="commands">
+			<li><a href="php.html">End Tutorial</a></li>
+			<li><a href="javascript:previous(8);">Previous</a></li>
+			<li class="next"><a href="javascript:next(8);">Next</a></li>
+		</ul>
+	</div>
+	<div class="step" id="step_9">
+		<p>First of all, we will take another look at <a href="javascript:define('boolean');" class="definition">Boolean</a> variable types. These can be either <span class="code">true</span> or <span class="code">false</span>. We can set them using the equals sign, as we did with other variable types:</p>
+<div class="code">
+&lt;?php<br />
+$my_bool = <span class="keyword">true</span>;<br />
+$other_bool = <span class="keyword">false</span>;<br />
+?&gt;</div>
+		<ul class="commands">
+			<li><a href="php.html">End Tutorial</a></li>
+			<li><a href="javascript:previous(9);">Previous</a></li>
+			<li class="next"><a href="javascript:next(9);">Next</a></li>
+		</ul>
+	</div>
+	<div class="step" id="step_10">
+		<p>We can also set <a href="javascript:define('boolean');" class="definition">Boolean</a> values using expressions. These compare values. We have four main Boolean expressions which can be used.</p>
+		<ul class="commands">
+			<li><a href="php.html">End Tutorial</a></li>
+			<li><a href="javascript:previous(10);">Previous</a></li>
+			<li class="next"><a href="javascript:next(10);">Next</a></li>
+		</ul>
+	</div>
+	<div class="step" id="step_11">
+		<p>The first is less than. To use this, we can just use the less than sign:</p>
+<div class="code">
+&lt;?php<br />
+$my_bool = ( 5&lt;3 ); <span class="comment">//false</span><br />
+?&gt;</div>
+<p>We can also do "less than or equal to" just by following the less than sign with an equals sign:</p>
+<div class="code">&lt;?php<br />
+  $my_bool = ( 5&lt;=6 ); <span class="comment">//true</span><br />
+  ?&gt;</div>
+		<ul class="commands">
+			<li><a href="php.html">End Tutorial</a></li>
+			<li><a href="javascript:previous(11);">Previous</a></li>
+			<li class="next"><a href="javascript:next(11);">Next</a></li>
+		</ul>
+	</div>
+	<div class="step" id="step_12">
+		<p>The second is greater than. This behaves in the same way as less than:</p>
+<div class="code">&lt;?php<br />
+  $my_bool = ( 6&gt;5 ); <span class="comment">//true</span><br />
+  ?&gt;</div>
+<p>We can also do "greater than or equal to" just by following the greater than sign with an equals sign:</p>
+<div class="code">&lt;?php<br />
+  $my_bool = ( 2&gt;=6 ); <span class="comment">//false</span><br />
+  ?&gt;</div>
+		<ul class="commands">
+			<li><a href="php.html">End Tutorial</a></li>
+			<li><a href="javascript:previous(12);">Previous</a></li>
+			<li class="next"><a href="javascript:next(12);">Next</a></li>
+		</ul>
+	</div>
+	<div class="step" id="step_13">
+		<p>The third is equal to. Since we use the equals sign to set a variable's value, we need something different for comparing variables. For this, we use two equals signs:</p>
+<div class="code">&lt;?php<br />
+  $my_bool = ( 5 == 5 ); <span class="comment">//true</span><br />
+  ?&gt;</div>
+<p>If both of the values are the same, the value is true, otherwise it's false.</p>
+		<ul class="commands">
+			<li><a href="php.html">End Tutorial</a></li>
+			<li><a href="javascript:previous(13);">Previous</a></li>
+			<li class="next"><a href="javascript:next(13);">Next</a></li>
+		</ul>
+	</div>
+	<div class="step" id="step_14">
+		<p>The final expression is "not equal to". If the values are different, then it is true, otherwise it's false. To do "not equal to", we use an exclamation mark followed by an equals sign (<span class="code">!=</span>).</p>
+		<div class="code">&lt;?php<br />
+		  $my_bool = ( 4!=6 ); <span class="comment">//true</span><br />
+		  ?&gt;</div>
+		<ul class="commands">
+			<li><a href="php.html">End Tutorial</a></li>
+			<li><a href="javascript:previous(14);">Previous</a></li>
+			<li class="next"><a href="javascript:next(14);">Next</a></li>
+		</ul>
+	</div>
+	<div class="step" id="step_15">
+		<p>We can also combine expressions using <span class="code">AND</span> and <span class="code">OR</span>.</p>
+		<ul class="commands">
+			<li><a href="php.html">End Tutorial</a></li>
+			<li><a href="javascript:previous(15);">Previous</a></li>
+			<li class="next"><a href="javascript:next(15);">Next</a></li>
+		</ul>
+	</div>
+	<div class="step" id="step_16">
+		<p>AND looks at a set of values. If any one of them is false, then the value is false, otherwise it is true.</p>
+		<div class="code">&lt;?php<br />
+		  $value = ( <span class="keyword">true AND true</span> ); <span class="comment">//true</span><br />
+		  $value = ( <span class="keyword">true AND false AND true</span> ); <span class="comment">//false</span><br />
+		  ?&gt;</div>
+		<ul class="commands">
+			<li><a href="php.html">End Tutorial</a></li>
+			<li><a href="javascript:previous(16);">Previous</a></li>
+			<li class="next"><a href="javascript:next(16);">Next</a></li>
+		</ul>
+	</div>
+	<div class="step" id="step_17">
+		<p>OR also looks at a set of values. If any of the values within the set are true, then the output is true, otherwise the output is false.</p>
+		<div class="code">&lt;?php<br />
+		  $value = ( <span class="keyword">true OR false</span> ); <span class="comment">//true</span><br />
+		  $value = ( <span class="keyword">false OR false OR false</span> ); <span class="comment">//false</span><br />
+		  ?&gt;</div>
+		<ul class="commands">
+			<li><a href="php.html">End Tutorial</a></li>
+			<li><a href="javascript:previous(17);">Previous</a></li>
+			<li class="next"><a href="javascript:next(17);">Next</a></li>
+		</ul>
+	</div>
+	<div class="step" id="step_18">
+		<p>Expressions can be "nested" (put inside one another) using brackets. They work just like mathematical equations.</p>
+		<ul class="commands">
+			<li><a href="php.html">End Tutorial</a></li>
+			<li><a href="javascript:previous(18);">Previous</a></li>
+			<li class="next"><a href="javascript:next(18);">Next</a></li>
+		</ul>
+	</div>
+	<div class="step" id="step_19">
+		<p>If a variable is an <a href="javascript:define('integer');" class="definition">integer</a> (whole number) or <a href="javascript:define('double');" class="definition">double</a> (any number) then you can do mathematical tasks with it. For example, if a 15% tip is charged at a restaurant, then we could calculate the price in the following way:</p>
+		<div class="code">&lt;?php<br />
+		  $price = 24.98;<br />
+		  $price = $price * 1.15;<br />
+		  ?&gt;</div>
+		<ul class="commands">
+			<li><a href="php.html">End Tutorial</a></li>
+			<li><a href="javascript:previous(19);">Previous</a></li>
+			<li class="next"><a href="javascript:next(19);">Next</a></li>
+		</ul>
+	</div>
+	<div class="step" id="step_20">
+		<p>We multiply the price by 1.15 to add 15% to the price. The asterisk symbol (<span class="code">*</span>) is used for multiplication and the forward slash symbol (<span class="code">/</span>) is used for division. We can use plus (<span class="code">+</span>) and minus (<span class="code">-</span>) as normal.</p>
+		<ul class="commands">
+			<li><a href="php.html">End Tutorial</a></li>
+			<li><a href="javascript:previous(20);">Previous</a></li>
+			<li class="next"><a href="javascript:next(20);">Next</a></li>
+		</ul>
+	</div>
+	<div class="step" id="step_21">
+		<p>We can also use a couple of "quick expressions" for incrementing (adding one) and decrementing (subtracting one) from variables. These are <span class="code">++</span> for adding one and <span class="code">--</span> for subtracting one. These are used in the following way:</p>
+		<div class="code">
+		&lt;?php<br />
+		$my_num = 5;<br />
+		$my_num++; <span class="comment">//my num is now 6</span><br />
+		$my_num--; <span class="comment">//my num is now 5 again</span><br />
+		?&gt;</div>
+		<ul class="commands">
+			<li><a href="php.html">End Tutorial</a></li>
+			<li><a href="javascript:previous(21);">Previous</a></li>
+			<li class="next"><a href="javascript:next(21);">Next</a></li>
+		</ul>
+	</div>
+	<div class="step" id="step_22">
+		<p>If you are using <a href="javascript:define('string');" class="definition">strings</a> (text), you can connect two strings to each other (called <a href="javascript:define('concatenate');" class="definition">concatenation</a>) using the full stop (<span class="code">.</span>) character:</p>
+		<div class="code">&lt;?php<br />
+		  $name = <span class="string">"Edmund"</span>;<br />
+		  <span class="keyword">echo</span> <span class="string">"Hello "</span> . $name;<br />
+		  ?&gt;</div>
+		<ul class="commands">
+			<li><a href="php.html">End Tutorial</a></li>
+			<li><a href="javascript:previous(22);">Previous</a></li>
+			<li class="next"><a href="javascript:next(22);">Next</a></li>
+		</ul>
+	</div>
+	<div class="task" id="step_23">
+		<p>Task: Create a variable called <span class="code">$my_name</span> with your name in it.</p>
+		<ul class="commands">
+			<li><a href="php.html">End Tutorial</a></li>
+			<li><a href="javascript:previous(23);">Previous</a></li>
+			<li class="next"><a href="javascript:next(23);">Next</a></li>
+		</ul>
+	</div>
+	<div class="task" id="step_24">
+		<p>Task: Write out the variable <span class="code">$my_name</span> you created in the previous task with the word "Hi" before it.</p>
+		<ul class="commands">
+			<li><a href="php.html">End Tutorial</a></li>
+			<li><a href="javascript:previous(24);">Previous</a></li>
+			<li class="next"><a href="javascript:next(24);">Next</a></li>
+		</ul>
+	</div>
+	<div class="task" id="step_25">
+		<p>Task: create a variable called <span class="code">$my_age</span> which holds your age in it. Add 10 years to your age and then write it out to the output panel.</p>
+		<ul class="commands">
+			<li><a href="php.html">End Tutorial</a></li>
+			<li><a href="javascript:previous(25);">Previous</a></li>
+			<li class="next"><a href="javascript:next(25);">Next</a></li>
+		</ul>
+	</div>
+	<div class="task" id="step_26">
+		<p>Task: Find out how much tax should be paid on a product worth 27.99 if the tax rate is 20%.</p>
+		<ul class="commands">
+			<li><a href="php.html">End Tutorial</a></li>
+			<li><a href="javascript:previous(26);">Previous</a></li>
+			<li class="next"><a href="javascript:next(26);">Next</a></li>
+		</ul>
+	</div>
+	<div class="step complete" id="step_27">
+		<p>Tutorial Complete</p>
+		<ul class="commands">
+			<li><a href="javascript:previous(27);">Previous</a></li>
+			<li><a href="php.html">Back to PHP Tutorials</a></li>
+			<li><a href="php_selection.html">Next Tutorial</a></li>
+		</ul>
+	</div>
+</div>
+</body>
+</html>

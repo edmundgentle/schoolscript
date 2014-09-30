@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Tutorials</title>
+<link href="supporting_files/style.css" rel="stylesheet" />
+<script src="supporting_files/jquery.js"></script>
+<script src="supporting_files/jquery-ui.js"></script>
+<script>
+$(function() {
+	$('body').disableSelection();
+	$(this).bind("contextmenu", function(e) {
+		e.preventDefault();
+	});
+});
+</script>
+</head>
+<body>
+<div id="title">Tutorials</div>
+<div id="main">
+	<a class="tut_button" href="ss.html">SchoolScript</a>
+	<a class="tut_button" href="php.html">PHP</a>
+</div>
+</body>
+</html>
