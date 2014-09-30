@@ -21,4 +21,4 @@ What I have developed so far has been as a side project, and has got the project
 
 The code is written in C# and uses builds of various languages (PHP, Python, Ruby, Perl) to run the code.
 
-This code is licensed under the BSD 2.0 license.
+This code is licensed under the GPL 2.0 license.
